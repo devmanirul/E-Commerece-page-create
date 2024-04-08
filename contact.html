@@ -37,18 +37,25 @@
         </div>
         <div class="relative w-3/4 flex flex-row justify-end items-center gap-4 pl-4 h-12 rounded-md">
             <input type="text" placeholder="What are you looking for?"
-                class="bg-[#f5f5f5] rounded text-xs pr-5 pl-3 py-2 text-start outline-none">
-            <img src="./images/nav/wishlist.svg" alt="" class="cursor-pointer">
-            <img src="./images/nav/troly.svg" alt="" class="cursor-pointer">
-            <img src="./images/about page/user.svg" alt="" class="">
-            <button class="absolute right-[150px]">
+                class="bg-[#f5f5f5] rounded text-xs pr-8 pl-3 py-2 text-start outline-none">
+            <a href="wishlist.html" class="">
+                <img src="./images/nav/wishlist.svg" alt="" class="">
+            </a>
+            <a href="#" class="">
+                <img src="./images/nav/troly.svg" alt="" class="cursor-pointer ">
+            </a>
+            <a href="checkout.html" class="relative group">
+                <img src="./images/about page/user.svg" alt="" class="">
+                <div class="absolute hidden group-hover:block border px-1">checkout</div>
+            </a>
+            <button class="absolute right-40">
                 <img src="./images/nav/search.svg" alt="" class="">
             </button>
         </div>
     </nav>
     <hr class="border mb-14">
     <!-- main sign up -->
-    <section class="px-28 flex flex-col gap-20 justify-between">
+    <section class="px-28 flex flex-col gap-10 justify-between">
         <p class=""><span class="text-[#808080]">Home /</span> About</p>
         <!-- call area -->
         <div class="flex flex-row gap-10 w-full">
