@@ -73,13 +73,70 @@
         </div>
     </section>
     <!-- Manage My account -->
-    <section class="px-28 flex flex-row ">
+    <section class="px-28 w-full flex flex-row gap-14">
         <!-- left account side -->
-        <h3 class="font-bold text-lg">Manage My Account</h3>
+        <div class="w-3/12 flex flex-col gap-4">
+            <!-- top -->
+            <div class="">
+                <h3 class="font-bold">Manage My Account</h3>
+                <div class="px-8 py-3 flex flex-col gap-2">
+                    <span class="text-[#df4d4d]">My Profile</span>
+                    <span class="text-[#808080]">Address Book</span>
+                    <span class="text-[#808080]">My Payment Options</span>
+                </div>
+            </div>
+            <!-- middle -->
+            <div class="">
+                <h3 class="font-bold">My Orders</h3>
+                <div class="px-8 py-3 flex flex-col gap-2">
+                    <span class="text-[#808080]">My Returns</span>
+                    <span class="text-[#808080]">My Cancellations</span>
+                </div>
+            </div>
+            <!-- bottom -->
+            <div class="">
+                <h3 class="font-bold">My Wishlist</h3>
+            </div>
+        </div>
         <!-- right account side -->
-        <h2 class="">
-            <span class="">Edit Your Profile</span>
-        </h2>
+        <div class="w-9/12 p-10">
+            <div class="">
+                <span class="text-[#df4d4d] text-xl font-semibold">Edit Your Profile</span>
+            </div>
+            <!-- first and last name area -->
+            <div class="flex flex-row gap-10 w-full">
+                <div class="flex flex-col gap-2 w-6/12">
+                    <h3 class="font-medium pt-4">First Name</h3>
+                    <input type="text" placeholder="Md" class="bg-[#f5f5f5] p-3 rounded-md">
+                </div>
+                <div class="flex flex-col gap-2 w-6/12">
+                    <h3 class="font-medium pt-4">Last Name</h3>
+                    <input type="text" placeholder="Rimel" class="bg-[#f5f5f5] p-3 rounded-md">
+                </div>
+            </div>
+            <!-- Email and last address area -->
+            <div class="flex flex-row gap-10 w-full">
+                <div class="flex flex-col gap-2 w-6/12">
+                    <h3 class="font-medium pt-4">Email</h3>
+                    <input type="text" placeholder="mmimonir1234@gmail.com" class="bg-[#f5f5f5] p-3 rounded-md">
+                </div>
+                <div class="flex flex-col gap-2 w-6/12">
+                    <h3 class="font-medium pt-4">Address</h3>
+                    <input type="text" placeholder="Kingston, 5236, United State" class="bg-[#f5f5f5] p-3 rounded-md">
+                </div>
+            </div>
+            <!-- password area -->
+            <div class="flex flex-col gap-5 w-full">
+                <h3 class="font-medium pt-4">Passward Changes</h3>
+                <input type="text" placeholder="Current Password" class="bg-[#f5f5f5] p-3 rounded-md">
+                <input type="text" placeholder="New Password" class="bg-[#f5f5f5] p-3 rounded-md">
+                <input type="text" placeholder="Confirm Password" class="bg-[#f5f5f5] p-3 rounded-md">
+            </div>
+            <div class="flex flex-row justify-end items-center gap-7  py-6">
+                <p class="font-medium text-lg">Cancel</p>
+                <button class="bg-[#df4d4d] py-4 px-12 text-white rounded-md">Save Changes</button>
+            </div>
+        </div>
     </section>
     <!-- footer section  -->
     <footer class="w-full bg-black py-10 mt-28">
