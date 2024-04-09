@@ -27,23 +27,30 @@
             <img src="./images/wishlist/DropDown.svg" alt="" class="">
         </div>
     </header>
-    <!-- navbar -->
-    <nav class="w-full px-28 pt-8 pb-1 flex flex-row justify-between items-center">
+      <!-- navbar -->
+      <nav class="w-full px-28 pt-8 pb-1 flex flex-row justify-between items-center">
         <div class="w-3/4 p-ticket">
             <h1 class="text-[#030712] font-bold text-2xl">Exclusive</h1>
         </div>
         <div class="w-3/4 flex flex-row text-lg  gap-10">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
+            <a href="#">About</a>
             <a href="signup.html">Sign Up</a>
         </div>
         <div class="relative w-3/4 flex flex-row justify-end items-center gap-4 pl-4 h-12 rounded-md">
             <input type="text" placeholder="What are you looking for?"
                 class="bg-[#f5f5f5] rounded text-xs pr-8 pl-3 py-2 text-start outline-none">
-            <img src="./images/nav/love.svg" alt="" class="cursor-pointer">
-            <img src="./images/nav/troly.svg" alt="" class="cursor-pointer">
-            <img src="./images/about page/user.svg" alt="" class="">
+            <a href="wishlist.html" class="relative">
+                <img src="./images/nav/wishlist.svg" alt="" class="">
+            </a>
+            <a href="cart.html" class="relative">
+                <img src="./images/nav/troly.svg" alt="" class="cursor-pointer ">
+            </a>
+            <a href="checkout.html" class="relative group">
+                <img src="./images/about page/user.svg" alt="" class="">
+                <div class="absolute hidden group-hover:block border px-1">checkout</div>
+            </a>
             <button class="absolute right-40">
                 <img src="./images/nav/search.svg" alt="" class="">
             </button>
