@@ -34,39 +34,44 @@
     </header>
     <!-- navbar -->
     <nav
-        class="w-full lg:px-28 px-5 lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center">
-        <div class="lg:w-3/4">
+        class="max-w-7xl mx-auto px-28 w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center">
+        <!-- top -->
+        <div class="lg:w-2/12">
             <h1 class="text-[#030712] lg:text-start md:text-start text-center font-bold lg:text-2xl md:text-xl text-lg">
                 Exclusive
             </h1>
         </div>
+        <!-- middle -->
         <div
-            class="lg:w-3/4 flex lg:flex-row md:flex-row flex-col lg:justify-normal md:justify-normal justify-center lg:items-start md:items-start items-center text-lg lg:gap-7 md:gap-3 gap-3">
-            <a href="./index.html"
-                class="hover:bg-[#e5e5e5] duration-300 transition px-1 rounded lg:text-base md:text-base text-sm">Home</a>
-            <a href="./contact.html"
-                class="hover:bg-[#e5e5e5] duration-300 transition px-1 rounded lg:text-base md:text-base text-sm">Contact</a>
+            class="lg:w-5/12 flex lg:flex-row md:flex-row flex-col lg:justify-end lg:items-start md:items-start items-center text-lg lg:gap-8 md:gap-3 gap-3">
+            <a href="index.html"
+                class="duration-300 transition px-1 lg:text-base md:text-base text-sm hover:underline poppins">Home</a>
+            <a href="contact.html"
+                class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">Contact</a>
             <a href="about.html"
-                class="hover:bg-[#e5e5e5] duration-300 transition px-1 rounded lg:text-base md:text-base text-sm">About</a>
+                class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">About</a>
             <a href="./signup.html"
-                class="hover:bg-[#e5e5e5] duration-300 transition px-1 rounded lg:text-base md:text-base text-sm">Sign
+                class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">Sign
                 Up</a>
         </div>
+        <!-- right -->
         <div
-            class="relative lg:w-3/4 flex flex-row  lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 lg:h-12 rounded-md">
+            class="relative lg:w-4/12 flex flex-row lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md">
             <input type="text" placeholder="What are you looking for?"
-                class="bg-[#f5f5f5] rounded text-xs lg:px-4 md:px-3 px-2 lg:py-3 md:py-2 py-1 text-start outline-none" />
-            <a href="wishlist.html" class="relative p-1 hover:bg-[#e5e5e5] rounded-full">
+                class="bg-[#f5f5f5] rounded text-xs lg:pr-8 pl-2 lg:py-2 outline-none poppins" />
+            <a href="wishlist.html" class="relative rounded-full">
                 <img src="./images/nav/wishlist.svg" alt="" class="" />
                 <div
-                    class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-1 md:top-1 top-0 lg:right-0 md:right-0 right-0">
-                    4</div>
+                    class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-0 md:top-1 top-0 lg:right-0 md:right-0 right-0">
+                    4
+                </div>
             </a>
-            <a href="#" class=" relative p-1 hover:bg-[#e5e5e5] rounded-full">
+            <a href="#" class="relative rounded-full">
                 <img src="./images/nav/troly.svg" alt="" class="cursor-pointer" />
                 <div
-                    class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-1 md:top-1 top-0 lg:right-0 md:right-0 right-0">
-                    2</div>
+                    class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-0 md:top-1 top-0 lg:right-0 md:right-0 right-0">
+                    2
+                </div>
             </a>
             <a href="checkout.html" class="relative group">
                 <img src="./images/about page/user.svg" alt="" class="" />
@@ -74,14 +79,15 @@
                     checkout
                 </div>
             </a>
-            <button class="absolute lg:right-[165px] md:right-[139px] right-[105px] lg:top-3 md:top-2 top-1">
+            <button class="absolute lg:right-[150px]  lg:top-[14px] md:top-2 top-2">
                 <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
             </button>
         </div>
     </nav>
     <hr class="border mb-14">
     <!--  wishlist section -->
-    <section class="lg:px-28 md:px-20 px-5 lg:py-8 md:py-5 py-3 flex flex-col lg:gap-10 md:gap-7 gap-5">
+    <section
+        class="max-w-7xl mx-auto lg:px-28 md:px-20 px-5 lg:py-8 md:py-5 py-3 flex flex-col lg:gap-10 md:gap-7 gap-5">
         <!--  -->
         <div class="flex flex-row justify-between items-center">
             <!-- heading -->
@@ -139,7 +145,7 @@
         </div>
     </section>
     <!--  -->
-    <section class="lg:px-28 md:px-20 px-5 lg:py-8 md:py-5 py-3 flex flex-row justify-between gap-5">
+    <section class="max-w-7xl mx-auto lg:px-28 md:px-20 px-5 lg:py-8 md:py-5 py-3 flex flex-row justify-between gap-5">
         <!-- left -->
         <div class="flex lg:flex-row md:flex-row flex-col lg:w-7/12">
             <div
@@ -248,7 +254,7 @@
                     class="text-white lg:text-base md:text-xs text-base pt-3 lg:text-start md:text-start text-center poppins">Privacy
                     Policy</a>
                 <a href=""
-                    class="text-white llg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Terms
+                    class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Terms
                     Of Use</a>
                 <a href=""
                     class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">FAQ</a>
