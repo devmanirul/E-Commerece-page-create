@@ -17,15 +17,19 @@
 
 <body>
     <!-- header -->
-    <header class="bg-black relative px-5 lg:flex-row md:flex-row flex-col">
-        <div class="flex lg:flex-row md:flex-row flex-col lg:justify-center items-center gap-4 lg:py-3 md:py-2 py-1">
-            <p class="text-white lg:text-center lg:text-lg md:text-base text-sm">Summer Sale For All Swim Suits And Free
-                Express Delivery - OFF 50%!</p>
-            <h3 class="text-white font-semibold lg:text-lg md:text-base text-sm text-center cursor-pointer">ShopNow</h3>
-        </div>
-        <div class="flex flex-row items-center gap-2 absolute lg:top-1 md:top-2 top-10 lg:right-28 right-3 bottom-0 cursor-pointer">
-            <p class="text-white lg:text-base text-sm">English</p>
-            <img src="./images/wishlist/DropDown.svg" alt="" class="">
+    <header class="bg-black">
+        <div
+            class="max-w-7xl mx-auto px-28  text-white flex flex-row py-3 justify-end items-center text-sm gap-[106px]">
+            <div class="flex flex-row gap-2">
+                <p class=" poppins">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! </p>
+                <button class="border-b border-white font-semibold border-none outline-none poppins"> ShopNow</button>
+            </div>
+            <div class="">
+                <select name="language" id="language" class=" bg-transparent poppins font-medium cursor-pointer">
+                    <option value="English" class="poppins font-medium text-black">English</option>
+                    <option value="Bangla" class="poppins font-medium text-black">Bangla</option>
+                </select>
+            </div>
         </div>
     </header>
     <!-- navbar -->
@@ -33,7 +37,8 @@
         <div class="w-3/4 p-ticket">
             <h1 class="text-[#030712] font-bold text-2xl">Exclusive</h1>
         </div>
-        <div class="w-3/4 flex lg:flex-row md:flex-row flex-col lg:justify-normal md:justify-normal justify-center lg:items-start md:items-start items-center text-lg lg:gap-7 md:gap-5 gap-3">
+        <div
+            class="w-3/4 flex lg:flex-row md:flex-row flex-col lg:justify-normal md:justify-normal justify-center lg:items-start md:items-start items-center text-lg lg:gap-7 md:gap-5 gap-3">
             <a href="./index.html" class="hover:bg-[#e5e5e5] duration-300 transition px-1 rounded ">Home</a>
             <a href="./contact.html" class="hover:bg-[#e5e5e5] duration-300 transition px-1 rounded">Contact</a>
             <a href="./about.html" class="hover:bg-[#e5e5e5] duration-300 transition px-1 rounded">About</a>
@@ -60,15 +65,15 @@
     <hr class="border mb-14">
     <!--  banner section -->
     <section class="px-28 flex flex-col gap-10">
-            <!-- heading -->
-            <div class="py-3">
-                <p class=""><span class="text-[#808080]">Home /</span> 404 Error</p>
-            </div>
-            <div class="flex flex-col justify-center items-center gap-12">
-                <h1 class="font-medium text-8xl">404 Not Found</h1>
-                <p class="">Your visited page not fonund. You may go home page.</p>
-                <button class="bg-[#df4d4d] py-4 px-12 text-white rounded-md">Back to home</button>
-            </div>
+        <!-- heading -->
+        <div class="py-3">
+            <p class=""><span class="text-[#808080]">Home /</span> 404 Error</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-12">
+            <h1 class="font-medium text-8xl">404 Not Found</h1>
+            <p class="">Your visited page not fonund. You may go home page.</p>
+            <button class="bg-[#df4d4d] py-4 px-12 text-white rounded-md">Back to home</button>
+        </div>
     </section>
     <!-- footer section  -->
     <footer class="w-full bg-black lg:pt-20 md:pt-12 pt-8 mt-10">
