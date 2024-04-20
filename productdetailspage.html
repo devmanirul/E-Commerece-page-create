@@ -33,59 +33,73 @@
         </div>
     </header>
     <!-- navbar -->
-    <nav
-        class="w-full lg:px-28 px-5 lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center">
-        <div class="lg:w-3/4">
+    <nav class="max-w-7xl mx-auto px-28 w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center">
+        <!-- top -->
+        <div class="lg:w-2/12">
             <h1 class="text-[#030712] lg:text-start md:text-start text-center font-bold lg:text-2xl md:text-xl text-lg">
-                Exclusive</h1>
+                Exclusive
+            </h1>
         </div>
+        <!-- middle -->
         <div
-            class="w-3/4 flex lg:flex-row md:flex-row flex-col lg:justify-normal md:justify-normal justify-center lg:items-start md:items-start items-center text-lg lg:gap-7 md:gap-5 gap-3">
-            <a href="index.html" class="hover:bg-[#e5e5e5] duration-300 transition px-1 rounded">Home</a>
-            <a href="contact.html" class="hover:bg-[#e5e5e5] duration-300 transition px-1 rounded">Contact</a>
-            <a href="about.html" class="hover:bg-[#e5e5e5] duration-300 transition px-1 rounded">About</a>
-            <a href="signup.html" class="hover:bg-[#e5e5e5] duration-300 transition px-1 rounded">Sign
+            class="lg:w-5/12 flex lg:flex-row md:flex-row flex-col lg:justify-end lg:items-start md:items-start items-center text-lg lg:gap-8 md:gap-3 gap-3">
+            <a href="index.html"
+                class="duration-300 transition px-1 lg:text-base md:text-base text-sm hover:underline poppins">Home</a>
+            <a href="contact.html"
+                class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">Contact</a>
+            <a href="about.html"
+                class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">About</a>
+            <a href="./signup.html"
+                class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">Sign
                 Up</a>
         </div>
-        <div class="relative lg:w-3/4 flex flex-row justify-end items-center lg:gap-4 gap-2 lg:pl-4 lg:h-12 rounded-md">
+        <!-- right -->
+        <div
+            class="relative lg:w-4/12 flex flex-row lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md">
             <input type="text" placeholder="What are you looking for?"
-                class="bg-[#f5f5f5] rounded text-xs lg:px-4 md:px-3 px-2 py-1 text-start outline-none">
-            <a href="wishlist.html" class="p-1 hover:bg-[#e5e5e5] rounded-full">
-                <img src="./images/nav/wishlist.svg" alt="" class="">
+                class="bg-[#f5f5f5] rounded text-xs lg:pr-8 pl-2 lg:py-2 outline-none poppins" />
+            <a href="wishlist.html" class="relative rounded-full">
+                <img src="./images/nav/wishlist.svg" alt="" class="" />
             </a>
-            <a href="cart.html" class="p-1 hover:bg-[#e5e5e5] rounded-full">
-                <img src="./images/nav/troly.svg" alt="" class="cursor-pointer">
+            <a href="cart.html" class="rounded-full">
+                <img src="./images/nav/troly.svg" alt="" class="cursor-pointer" />
             </a>
-            <button class="absolute lg:right-[115px] md:right-9 right-24">
-                <img src="./images/nav/search.svg" alt="" class="h-5 w-5">
+            <a href="#" class="relative group">
+                <img src="./images/about page/user.svg" alt="" class="" />
+                <div class="absolute hidden group-hover:block border px-1">
+                    checkout
+                </div>
+            </a>
+            <button class="absolute lg:right-[150px]  lg:top-[14px] md:top-2 top-2">
+                <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
             </button>
         </div>
     </nav>
-    <hr class="border lg:mb-14 md:mb-3 mb-5">
+    <hr class="border lg:mb-12 md:mb-3 mb-5">
     <!--  wishlist section -->
-    <section class="lg:px-28 md:px-8 px-5 lg:py-8 md:py-3 py-2 flex flex-col gap-6">
+    <section class="max-w-7xl mx-auto lg:px-28 lg:py-8 md:py-3 py-2 flex flex-col gap-6">
         <!-- heading -->
         <div class="">
             <div class=""></div>
-            <h3 class=""><span class="text-[#808080]">Account / Gaming / </span>Havit HV G-92 Gamepad</h3>
+            <h3 class="poppins"><span class="text-[#808080]">Account / Gaming / </span>Havit HV G-92 Gamepad</h3>
         </div>
         <!-- main -->
-        <div class="flex flex-col lg:gap-14 md:gap-8 gap-4">
+        <div class="flex flex-col lg:gap-1 md:gap-8 gap-4 pt-12">
             <!-- Havic hv -->
-            <div class="flex lg:flex-row md:flex-col flex-col lg:gap-10 md:gap-5 gap-5">
+            <div class="flex lg:flex-row md:flex-col flex-col lg:gap-8 md:gap-5 gap-5">
                 <!-- left side -->
-                <div class="flex lg:flex-col md:flex-row flex-col lg:w-3/12 md:w-full w-full gap-4">
+                <div class="lg:w-2/12 flex lg:flex-col md:flex-row flex-col  md:w-full w-full gap-6">
                     <img src="./images/product-details/gamepad1.svg" alt="" class="md:w-[164px]">
                     <img src="./images/product-details/gamepad2.svg" alt="" class="md:w-[164px]">
                     <img src="./images/product-details/gamepad3.svg" alt="" class="md:w-[164px]">
                     <img src="./images/product-details/gamepad4.svg" alt="" class="md:w-[164px]">
                 </div>
                 <!-- middle side -->
-                <div class="lg:w-10/12 w-full bg-[#f5f5f5] flex flex-row justify-center items-center">
+                <div class="lg:w-5/12 w-full bg-[#f5f5f5] flex flex-row justify-center items-center">
                     <img src="./images/product-details/gamepadbig.svg" alt="" class="">
                 </div>
                 <!-- right side -->
-                <div class="flex flex-col lg:w-4/12 md:w-full w-full gap-5">
+                <div class="lg:w-5/12 flex flex-col  md:w-full w-full gap-[18px]">
                     <h2 class="font-bold lg:text-2xl md:text-xl text-lg">Havic HV G-92 Gamepad</h2>
                     <div class="flex flex-row gap-3">
                         <div class="flex lg:flex-row md:flex-row flex-col gap-1 ">
@@ -97,15 +111,15 @@
                                 <img src="./images/Flash sales/stat-gray.svg" alt="" class="">
                             </div>
                             <div class="flex flex-row leading-10">
-                                <p class="text-[#808080] pr-4 font-semibold border-r-2 border-[#808080]">(150 Reviews)
+                                <p class="text-[#808080] pr-4 border-r-2 border-[#808080] poppins">(150 Reviews)
                                 </p>
-                                <span class="text-[#66ffa3] pl-4">In Stock</span>
+                                <span class="text-[#79ffae] pl-4">In Stock</span>
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-3` pb-3">
+                    <div class="flex flex-col gap-3 pb-3">
                         <h2 class="font-medium text-xl">$192.00</h2>
-                        <p class="text-justify">
+                        <p class="text-justify poppins">
                             PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble
                             free install & mess free removal Pressure sensitive.
                         </p>
@@ -114,8 +128,8 @@
                     <div class="flex flex-row gap-4">
                         <h4 class="font-medium text-lg">Colours:</h4>
                         <div class="flex flex-row gap-2 items-center bottom-4">
-                            <div class="bg-[#a0bce0] w-4 h-4 rounded-full cursor-pointer ring ring-black"></div>
-                            <div class="bg-[#e95353] w-5 h-5  rounded-full cursor-pointer ">
+                            <div class="bg-[#a0bce0] w-4 h-4 rounded-full cursor-pointer border-[2px] border-white ring-[2px] ring-black"></div>
+                            <div class="bg-[#e07575] w-5 h-5  rounded-full cursor-pointer ">
                             </div>
                         </div>
                     </div>
@@ -140,32 +154,32 @@
                     </div>
                     <!-- buy now area -->
                     <div class="w-full flex flex-row gap-5">
-                        <div class="flex flex-row w-4/12">
-                            <div class="border-black border p-1 font-semibold w-3/12 text-center rounded-l-md">-</div>
-                            <div class="border-black border p-1 font-semibold w-6/12 text-center">2</div>
-                            <div class="p-1 font-semibold w-3/12 text-center text-white rounded-r-md bg-[#da4444]">+
+                        <div class="flex flex-row items-center w-4/12">
+                            <div class="border-[#808080] border py-2 font-semibold w-3/12 text-center rounded-l-md">-</div>
+                            <div class="border-[#808080] border py-2 font-semibold w-6/12 text-center">2</div>
+                            <div class="border-[#808080] border py-2 font-semibold w-3/12 text-center text-white rounded-r-md bg-[#db4444]">+
                             </div>
                         </div>
-                        <button class="w-4/12 bg-[#da4444] rounded-md py-2 text-white">
+                        <button class="w-4/12 bg-[#db4444] rounded-md py-2 text-white">
                             Buy Now
                         </button>
                         <img src="./images/product-details/Wishlist.svg" alt=""
-                            class="border-black border p-1 rounded-md">
+                            class="border-[#808080] border p-1 rounded-md">
                     </div>
                     <!-- delivery area -->
-                    <div class="border-black border rounded-md">
-                        <div class="flex flex-row border-b-black border gap-5 p-4">
+                    <div class="border-[#808080] border rounded-md">
+                        <div class="flex flex-row border-b-black border gap-3 p-4">
                             <img src="./images/product-details/icon-delivery.svg" alt="">
                             <div class="flex flex-col gap-2">
                                 <h3 class="font-semibold">Free Delivery</h3>
-                                <p class="text-sm font-semibold">Enter your pastal code for Delivery Availability</p>
+                                <p class="text-xs font-semibold poppins">Enter your pastal code for Delivery Availability</p>
                             </div>
                         </div>
                         <div class="flex flex-row gap-5 p-4">
                             <img src="./images/product-details/Icon-return.svg" alt="">
                             <div class="flex flex-col gap-2">
                                 <h3 class="font-semibold">Return Delivery</h3>
-                                <p class="text-sm font-semibold">Free 30 Days Delivery Returns. Details</p>
+                                <p class="text-sm font-semibold poppins">Free 30 Days Delivery Returns. Details</p>
                             </div>
                         </div>
                     </div>
@@ -174,156 +188,168 @@
         </div>
     </section>
     <!--  just for you section -->
-    <section class="lg:px-28 md:px-8 px-5 lg:py-8 md:py-3 py-2 flex flex-col lg:gap-14 md:gap-10 gap-5">
+    <section class="max-w-7xl mx-auto lg:px-28 md:px-8 px-5 lg:py-8 md:py-3 py-2 flex flex-col lg:gap-10 md:gap-10 gap-5">
         <!-- top -->
         <div class="flex flex-row items-center gap-5">
             <div class="bg-[#db4444] h-9 w-4 rounded"></div>
-            <p class="font-semibold text-[#db4444]">Related Item</p>
+            <p class="font-semibold text-[#db4444] poppins">Related Item</p>
         </div>
         <!-- card area -->
-        <div class="flex lg:flex-row md:flex-col flex-col gap-6 w-full">
-            <!-- card1 -->
-            <div class="lg:w-full w-3/4 flex flex-col gap-3">
-                <div class="relative rounded-md bg-[#f5f5f5]">
-                    <div class="relative">
-                        <div class="p-12">
-                            <img src="./images/wishlist/gamepadred.svg" alt="" class="">
-                        </div>
+        <div class="flex flex-row gap-4">
+            <!-- cart 1 -->
+            <div class="w-3/12">
+                <!-- top -->
+                <div class=" relative group">
+                    <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-40%
                     </div>
-                    <div
-                        class="absolute lg:bottom-4 md:bottom-[110px] flex flex-row gap-36 pb-2 px-3 justify-between items-center">
-                        <div class="h-7 w-14 rounded-md px-2 bg-[#db4444]">
-                            <p class="text-white md:text-xs text-center">40%</p>
-                        </div>
-                        <img src="./images/wishlist/Eye.svg" alt="">
+                    <div class="flex flex-col gap-1 absolute top-2 right-2">
+                        <button class="rounded-full  bg-white"><img src="./images/Flash sales/love.svg" alt=""
+                                class=" "></button>
+                        <button class="rounded-full bg-white"><img src="./images/Flash sales/Eye.svg" alt=""
+                                class=""></button>
                     </div>
-                    <div class="absolute lg:bottom-40 md:bottom-[116px] pl-[10px] lg:left-52 md:right-2">
-                        <img src="./images/Flash sales/Eye.svg" alt="" class="">
-                    </div>
+                    <a href="./pro_details.html"
+                        class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px] rounded-md">
+                        <img src="./images/Flash sales/gamepad.svg" alt="" class="h-36 p-2">
+                    </a>
+                    <button
+                        class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                        To Cart
+                    </button>
                 </div>
-                <div class="flex flex-col gap-2">
-                    <h3 class="font-semibold">HAVIT HV-G92 Gamepad</h3>
-                    <div class="flex flex-row gap-3">
-                        <div class="">
-                            <p class=""><span class="text-[#db4444] font-semibold text-lg">&5120</span> <span
-                                    class="line-through font-semibold">$160</span>
-                        </div>
+                <!-- bottom section -->
+                <div class="mt-4 ml-2">
+                    <h6 class="font-medium text-base poppins">HAVIT HV-G92 Gamepad</h6>
+                    <div class="flex flex-row items-center text-base font-medium gap-2">
+                        <p class="poppins font-medium text-[#DB4444]">$120</p>
+                        <p class="poppins font-medium line-through text-[#808080]">$160</p>
                     </div>
                     <div class="flex flex-row gap-1">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <p class="text-[#808080] text-center font-semibold">(88)</p>
+                        <img src="./images/Flash sales/star.svg" alt="" class="" />
+                        <img src="./images/Flash sales/star.svg" alt="" class="" />
+                        <img src="./images/Flash sales/star.svg" alt="" class="" />
+                        <img src="./images/Flash sales/star.svg" alt="" class="" />
+                        <img src="./images/Flash sales/star.svg" alt="" class="" />
+                        <p class="text-[#808080] font-semibold poppins">(65)</p>
                     </div>
                 </div>
             </div>
-            <!-- card2 -->
-            <div class="lg:w-3/4 flex flex-col gap-3">
-                <div class="relative rounded-md bg-[#f5f5f5]">
-                    <div class="relative">
-                        <div class="p-12">
-                            <img src="./images/Flash sales/keyboard.svg" alt="" class="">
-                        </div>
-                        <div
-                            class="absolute w-full flex flex-row justify-center items-center p-2 rounded-b-md bg-black bottom-0">
-                            <p class="text-white">Add to Cart</p>
-                        </div>
+            <!-- cart 2 -->
+            <div class="w-3/12">
+                <!-- top -->
+                <div class="relative group">
+                    <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-35%
                     </div>
-                    <div
-                        class="absolute lg:bottom-48 md:bottom-[110px] flex flex-row gap-40 pb-2 px-3 justify-between items-center">
-                        <div class="h-7 w-14 rounded-md bg-[#db4444]">
-                            <p class="text-white text-center">-35%</p>
-                        </div>
-                        <img src="./images/Flash sales/love.svg" alt="">
+                    <div class="flex flex-col gap-1 absolute top-2 right-2">
+                        <button class="rounded-full  bg-white"><img src="./images/Flash sales/love.svg" alt=""
+                                class=" "></button>
+                        <button class="rounded-full bg-white"><img src="./images/Flash sales/Eye.svg" alt=""
+                                class=""></button>
                     </div>
-                    <div class="absolute lg:bottom-40 md:bottom-[116px] pl-[10px] lg:left-52 md:right-2">
-                        <img src="./images/Flash sales/Eye.svg" alt="" class="">
-                    </div>
+                    <a href="./pro_details.html"
+                        class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[42px] rounded-md">
+                        <img src="./images/Flash sales/keyboard.svg" alt="" class="h-32">
+                    </a>
+                    <button
+                        class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                        To
+                        Cart
+                    </button>
                 </div>
-                <div class="flex flex-col gap-2">
-                    <h3 class="font-semibold">Gucci duffle bag</h3>
-                    <div class="">
-                        <p class="">
-                            <span class="text-[#db4444] font-semibold text-lg">&960</span> <span
-                                class="text-[#808080] font-semibold text-lg line-through">&1160</span>
-                        </p>
+                <!-- bottom -->
+                <div class="mt-4 ml-2">
+                    <h6 class="font-medium text-base poppins">AK-900 Wired Keyboard</h6>
+                    <div class="flex flex-row items-center text-base font-medium gap-2">
+                        <p class="text-[#DB4444] poppins font-medium">$900</p>
+                        <p class="line-through text-[#808080] poppins font-medium">$1160</p>
                     </div>
-                    <div class="flex flex-row gap-1">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/stat-gray.svg" alt="" class="">
-                        <p class="text-[#808080] font-semibold">(75)</p>
+                    <div class="flex flex-row items-center">
+                        <div class="flex flex-row">
+                            <img src="./images/Flash sales/star.svg" alt="" class="" />
+                            <img src="./images/Flash sales/star.svg" alt="" class="" />
+                            <img src="./images/Flash sales/star.svg" alt="" class="" />
+                            <img src="./images/Flash sales/star.svg" alt="" class="" />
+                            <img src="./images/Flash sales/star.svg" alt="" class="" />
+                        </div>
+                        <p class="text-[#808080] poppins font-medium">(75)</p>
                     </div>
                 </div>
             </div>
-            <!-- card3 -->
-            <div class="lg:w-3/4 flex flex-col gap-3">
-                <div class="relative rounded-md bg-[#f5f5f5]">
-                    <div class="relative">
-                        <div class="p-12">
-                            <img src="./images/wishlist/monitor.svg" alt="" class="">
-                        </div>
+            <!-- cart 3 -->
+            <div class="w-3/12">
+                <!-- top -->
+                <div class="relative group">
+                    <div class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded">-30%
                     </div>
-                    <div
-                        class="absolute lg:bottom-48 md:bottom-[110px] flex flex-row gap-40 pb-2 px-3 justify-between items-center">
-                        <div class="h-7 w-14 rounded-md bg-[#db4444]">
-                            <p class="text-white text-center">-30%</p>
-                        </div>
-                        <img src="./images/Flash sales/love.svg" alt="">
+                    <div class="flex flex-col gap-1 absolute top-2 right-2">
+                        <button class="rounded-full  bg-white"><img src="./images/Flash sales/love.svg" alt=""
+                                class=" "></button>
+                        <button class="rounded-full bg-white"><img src="./images/Flash sales/Eye.svg" alt=""
+                                class=""></button>
                     </div>
-                    <div class="absolute lg:bottom-40 md:bottom-[116px] pl-[10px] lg:left-52 md:right-2">
-                        <img src="./images/Flash sales/Eye.svg" alt="" class="">
-                    </div>
+                    <a href="./pro_details.html"
+                        class="bg-[#F5F5F5] flex flex-col justify-center items-center py-[44px] rounded-md">
+                        <img src="./images/Flash sales/monitor.svg" alt="" class="h-[124px]">
+                    </a>
+                    <button
+                        class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                        To
+                        Cart
+                    </button>
                 </div>
-                <div class="flex flex-col gap-2">
-                    <h3 class="font-semibold">IPS LCD Gaming Monitor</h3>
-                    <div class="flex flex-row gap-3">
-                        <div class="">
-                            <p class=""><span class="text-[#db4444] font-semibold text-lg">&370</span> <span
-                                    class="text-[#808080] line-through font-semibold text-lg">$400</span>
-                        </div>
+                <!-- bottom -->
+                <div class="mt-4 ml-2">
+                    <h6 class="font-medium text-base poppins">IPS LCD Gaming Monitor</h6>
+                    <div class="flex flex-row items-center text-base font-medium gap-2">
+                        <p class="text-[#DB4444] poppins font-medium">$370</p>
+                        <p class="line-through text-[#808080] poppins font-medium">$400</p>
                     </div>
-                    <div class="flex flex-row gap-1">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <p class="text-[#808080] text-center font-semibold">(99)</p>
+                    <div class="flex flex-row items-center">
+                        <div class="flex flex-row">
+                            <img src="./images/Flash sales/star.svg" alt="" class="" />
+                            <img src="./images/Flash sales/star.svg" alt="" class="" />
+                            <img src="./images/Flash sales/star.svg" alt="" class="" />
+                            <img src="./images/Flash sales/star.svg" alt="" class="" />
+                            <img src="./images/Flash sales/star.svg" alt="" class="" />
+                        </div>
+                        <p class="text-[#808080] poppins font-medium">(99)</p>
                     </div>
                 </div>
             </div>
             <!-- card4 -->
-            <div class="lg:w-3/4 flex flex-col gap-3">
-                <div class="relative rounded-md bg-[#f5f5f5]">
-                    <div class="p-12">
-                        <img src="./images/best-sell/cpu-cooler.svg" alt="" class="">
+            <div class="w-3/12">
+                <!-- TOP section for images -->
+                <div class=" relative group">
+                    <div class="flex flex-col gap-1 absolute top-2 right-2">
+                        <button class="rounded-full  bg-white"><img src="./images/Flash sales/love.svg" alt=""
+                                class=" "></button>
+                        <button class="rounded-full bg-white"><img src="./images/Flash sales/Eye.svg" alt=""
+                                class=""></button>
                     </div>
-                    <div class="absolute bottom-48 flex flex-row right-2 pb-2 justify-between items-center">
-                        <img src="./images/Flash sales/love.svg" alt="">
-                    </div>
-                    <div class="absolute bottom-40 pl-[13px] left-52">
-                        <img src="./images/Flash sales/Eye.svg" alt="" class="">
-                    </div>
+                    <a href="./pro_details.html"
+                        class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px] rounded-md">
+                        <img src="./images/best-sell/cpu-cooler.svg" alt="" class="h-36">
+                    </a>
+                    <button
+                        class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0">Add
+                        To Cart
+                    </button>
                 </div>
+                <!-- Bottom section for content -->
                 <div class="flex flex-col gap-2">
-                    <h3 class="font-semibold">RGB liquid CPU Cooler</h3>
+                    <h3 class="font-semibold poppins">RGB liquid CPU Cooler</h3>
                     <div class="">
                         <p class="">
-                            <span class="text-[#db4444] font-semibold text-lg">&160</span> <span
-                                class="text-[#808080] font-semibold text-lg line-through">&170</span>
+                            <span class="text-[#db4444] font-semibold lg:text-lg md:text-base text-lg">$160</span>
+                            <span class="text-[#808080] font-semibold text-lg line-through">$170</span>
                         </p>
                     </div>
                     <div class="flex flex-row gap-1">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star.svg" alt="" class="">
-                        <img src="./images/Flash sales/star-half-filled.svg" alt="" class="">
+                        <img src="./images/Flash sales/star.svg" alt="" class="" />
+                        <img src="./images/Flash sales/star.svg" alt="" class="" />
+                        <img src="./images/Flash sales/star.svg" alt="" class="" />
+                        <img src="./images/Flash sales/star.svg" alt="" class="" />
+                        <img src="./images/Flash sales/star-half-filled.svg" alt="" class="" />
                         <p class="text-[#808080] font-semibold">(65)</p>
                     </div>
                 </div>
