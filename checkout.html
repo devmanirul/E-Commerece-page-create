@@ -44,8 +44,7 @@
         <!-- middle -->
         <div
             class="lg:w-5/12 flex lg:flex-row md:flex-row flex-col lg:justify-end lg:items-start md:items-start items-center text-lg lg:gap-8 md:gap-3 gap-3">
-            <a href="index.html"
-                class="poppins px-1 lg:text-base md:text-base text-sm hover:underline poppins">Home</a>
+            <a href="index.html" class="poppins px-1 lg:text-base md:text-base text-sm hover:underline poppins">Home</a>
             <a href="contact.html"
                 class="poppins px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">Contact</a>
             <a href="about.html"
@@ -55,7 +54,8 @@
                 Up</a>
         </div>
         <!-- right -->
-        <div class="relative lg:w-4/12 flex flex-row lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md">
+        <div
+            class="relative lg:w-4/12 flex flex-row lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md">
             <input type="text" placeholder="What are you looking for?"
                 class="bg-[#f5f5f5] rounded text-xs lg:pr-8 pl-2 lg:py-2 outline-none poppins" />
             <a href="wishlist.html" class="relative rounded-full">
@@ -90,17 +90,18 @@
         <div class="flex flex-row justify-between items-center">
             <!-- heading -->
             <div class="py-3 mb-10">
-                <p class="poppins"><span class="text-[#808080]">Account / My Account / Product / View Cart / </span>ChackOut
+                <p class="poppins"><span class="text-[#808080]">Account / My Account / Product / View Cart /
+                    </span>ChackOut
                 </p>
             </div>
         </div>
     </section>
     <!--  -->
-    <section class="max-w-7xl mx-auto lg:px-36 flex flex-col gap-8">
+    <section class="max-w-7xl mx-auto lg:px-28 flex flex-col gap-8">
         <h2 class="text-4xl font-semibold">Billing Details</h2>
-        <div class="flex lg:flex-row md:flex-row flex-col lg:gap-36 gap-10">
+        <div class="flex lg:flex-row md:flex-row flex-col lg:gap-20 gap-10">
             <!-- left side -->
-            <div class="flex flex-col gap-8 lg:w-5/12/12">
+            <div class="flex flex-col gap-8 lg:w-6/12">
                 <!-- first name -->
                 <div class="flex flex-col gap-2">
                     <p class="text-[#999999] poppins">First Name</p>
@@ -137,77 +138,82 @@
                     <input type="text" class="p-3 bg-[#f5f5f5] outline-none rounded-md">
                 </div>
                 <!-- checkbox area -->
-                <div class="flex flex-row gap-5">
-                    <img src="./images/checkout/checkbox.svg" alt="" class="">
-                    <p class="text-lg poppins">Save this information for faster check-out next time</p>
+                <div class="flex flex-row gap-3">
+                    <input type="checkbox" id="checkbox" name="checkbox" style="background-color: red;" class="h-5 w-5 rounded-lg">
+                    <p class="poppins">Save this information for faster check-out next time</p>
                 </div>
             </div>
             <!-- right side -->
-            <div class="flex flex-col lg:w-7/12 pr-10">
-                <!-- patturn1 -->
-                <div class="flex lg:flex-row justify-between items-center rounded-md py-5">
-                    <div class="flex flex-row items-center gap-4">
-                        <img src="./images/cart/gamepadred.svg" alt="" class="h-14">
-                        <p class="poppins">H1 Gamepad</p>
+            <div class="flex flex-col gap-3 lg:w-6/12">
+                <div class=" pr-14">
+                    <!-- patturn1 -->
+                    <div class="flex lg:flex-row justify-between items-center rounded-md py-5">
+                        <div class="flex flex-row items-center gap-6">
+                            <img src="./images/cart/gamepadred.svg" alt="" class="h-14">
+                            <p class="poppins">H1 Gamepad</p>
+                        </div>
+                        <p class="">$650</p>
                     </div>
-                    <p class="">$650</p>
+                    <!-- patturn2 -->
+                    <div class="flex lg:flex-row justify-between items-center rounded-md py-5">
+                        <div class="flex flex-row items-center gap-6">
+                            <img src="./images/cart/monitor.svg" alt="" class="h-14">
+                            <p class="poppins">LCD Monitor</p>
+                        </div>
+                        <p class="">$1100</p>
+                    </div>
+                    <!--  -->
+                    <div class="flex flex-col gap-1">
+                        <!-- subtotal -->
+                        <div class="flex flex-row justify-between items-center py-3">
+                            <p class="poppins">Subtotal:</p>
+                            <p class="">$1750</p>
+                        </div>
+                        <hr class="border-black">
+                        <!-- subtota2 -->
+                        <div class="flex flex-row justify-between items-center py-3">
+                            <p class="poppins">Shipping:</p>
+                            <p class="">Free</p>
+                        </div>
+                        <hr class="border-black">
+                        <div class="flex flex-row justify-between items-center py-3">
+                            <p class="poppins">Total:</p>
+                            <p class="">$1750</p>
+                        </div>
+                    </div>
+                    <!-- payment area -->
+                    <div class="flex flex-col justify-between gap-3">
+                        <!-- select bank/left -->
+                        <div class="flex flex-row gap-1 justify-between">
+                            <div class="flex items-center">
+                                <input type="radio" id="option1" name="option" class="form-radio text-blue-500 h-5 w-5">
+                                <label for="option1" class="ml-2">Bank</label>
+                            </div>
+                            <div class="flex flex-row gap-2">
+                                <img src="./images/checkout/Bkash.svg" alt="" class="">
+                                <img src="./images/checkout/Visa.svg" alt="" class="">
+                                <img src="./images/checkout/Mastercard.svg" alt="" class="">
+                                <img src="./images/checkout/Nagad.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-2">
+                            <input type="radio" id="option2" name="option" class="form-radio text-blue-500 h-5 w-5">
+                            <label for="option2" class="ml-2">Cash on delivery</label>
+                        </div>
+                    </div>
                 </div>
-                <!-- patturn2 -->
-                <div class="flex lg:flex-row justify-between items-center rounded-md py-5">
-                    <div class="flex flex-row items-center gap-4">
-                        <img src="./images/cart/monitor.svg" alt="" class="h-14">
-                        <p class="poppins">LCD Monitor</p>
-                    </div>
-                    <p class="">$1100</p>
-                </div>
-                <!--  -->
-                <div class="">
-                    <!-- subtotal -->
-                    <div class="flex flex-row justify-between items-center py-3">
-                        <p class="poppins">Subtotal:</p>
-                        <p class="">$1750</p>
-                    </div>
-                    <hr class="border-black">
-                    <!-- subtota2 -->
-                    <div class="flex flex-row justify-between items-center py-3">
-                        <p class="poppins">Shipping:</p>
-                        <p class="">Free</p>
-                    </div>
-                    <hr class="border-black">
-                    <div class="flex flex-row justify-between items-center py-3">
-                        <p class="poppins">Total:</p>
-                        <p class="">$1750</p>
-                    </div>
-                </div>
-                <!-- select bank -->
-                <div class="flex flex-row gap-4 justify-between">
-                    <div class="flex flex-row gap-4 my-3">
-                        <input type="radio" class="bg-black">
-                        <p class="poppins">Bank</p>
-                    </div>
-                    <div class="flex flex-row gap-2">
-                        <img src="./images/checkout/Bkash.svg" alt="" class="">
-                        <img src="./images/checkout/Visa.svg" alt="" class="">
-                        <img src="./images/checkout/Mastercard.svg" alt="" class="">
-                        <img src="./images/checkout/Nagad.svg" alt="" class="">
-                    </div>
-                </div>
-                <div class="flex flex-row gap-4">
-                    <input type="radio" class="bg-black">
-                    <p class="poppins">Cash on delivery</p>
-                </div>
-                <!--  -->
+                <!-- coupon -->
                 <div class="flex lg:flex-row md:flex-col flex-col gap-6 mt-5 justify-between">
                     <div class="">
                         <input type="text" placeholder="Coupon Code"
                             class="border-2 py-3 pl-4 pr-10 outline-none rounded-md poppins">
                     </div>
                     <div class="flex flex-row">
-                        <button class="py-3 px-8 rounded-md bg-[#db4444] text-white poppins">Apply Coupon</button>
+                        <button class="py-3 px-7 rounded-md bg-[#db4444] text-white poppins">Apply Coupon</button>
                     </div>
                 </div>
                 <!-- place order -->
-                <div class="flex flex-row">
+                <div class=" lex flex-row">
                     <button class="py-3 px-10 mt-5 rounded-md bg-[#db4444] text-white poppins">Place Order</button>
                 </div>
             </div>
@@ -283,7 +289,7 @@
                     class="text-white lg:text-base md:text-xs text-base pt-3 lg:text-start md:text-start text-center poppins">Privacy
                     Policy</a>
                 <a href=""
-                    class="text-white llg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Terms
+                    class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Terms
                     Of Use</a>
                 <a href=""
                     class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">FAQ</a>
