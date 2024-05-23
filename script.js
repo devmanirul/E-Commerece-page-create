@@ -6,8 +6,19 @@ $(document).ready(function () {
     slidesToScroll: 1,
     prevArrow: ".previous",
     nextArrow: ".next",
+  });
+});
 
 
+
+$(document).ready(function () {
+  $(".working").slick({
+    //   setting-name: setting-value
+    arrows: true,
+    slideToShow: 4,
+    slidesToScroll: 4,
+    prevArrow: ".previous",
+    nextArrow: ".next",
   });
 });
 
