@@ -1,10 +1,34 @@
+// flash sales
 $(document).ready(function () {
-  $(".your-class").slick({
+  $(".flash_cart").slick({
     // setting-name: setting-value
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
     prevArrow: ".previous",
     nextArrow: ".next",
+  });
+});
+// Browse by catagory
+$(document).ready(function () {
+  $(".catagoryCard").slick({
+    // setting-name: setting-value
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: ".Cprevious",
+    nextArrow: ".Cnext",   
+  });
+});
+// explore our products
+$(document).ready(function () {
+  $(".explore").slick({
+    // setting-name: setting-value
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: ".Eprevious",
+    nextArrow: ".Enext",
   });
 });
