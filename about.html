@@ -1,356 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About page</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <!-- header -->
-  <header class="bg-black">
-    <div class="max-w-7xl mx-auto px-28  text-white flex flex-row py-3 justify-end items-center text-sm gap-[106px]">
-      <div class="flex flex-row gap-2">
-        <p class=" poppins">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! </p>
-        <button class="border-b border-white font-semibold border-none outline-none underline poppins"> ShopNow</button>
+  <body>
+    <!-- header -->
+    <header class="bg-black">
+      <div
+        class="max-w-7xl mx-auto px-28 text-white flex flex-row py-3 justify-end items-center text-sm gap-[106px]"
+      >
+        <div class="flex flex-row gap-2">
+          <p class="poppins">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </p>
+          <button
+            class="border-b border-white font-semibold border-none outline-none underline poppins"
+          >
+            ShopNow
+          </button>
+        </div>
+        <div class="">
+          <select
+            name="language"
+            id="language"
+            class="bg-transparent poppins font-medium cursor-pointer outline-none"
+          >
+            <option value="English" class="poppins font-medium text-black">
+              English
+            </option>
+            <option value="Bangla" class="poppins font-medium text-black">
+              Bangla
+            </option>
+          </select>
+        </div>
       </div>
-      <div class="">
-        <select name="language" id="language" class=" bg-transparent poppins font-medium cursor-pointer outline-none">
-          <option value="English" class="poppins font-medium text-black">English</option>
-          <option value="Bangla" class="poppins font-medium text-black">Bangla</option>
-        </select>
+    </header>
+    <!-- navbar -->
+    <nav
+      class="max-w-7xl mx-auto px-28 w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-2 gap-2 lg:justify-between md:justify-between items-center"
+    >
+      <!-- top -->
+      <div class="lg:w-2/12">
+        <h1
+          class="text-[#030712] lg:text-start md:text-start text-center font-bold lg:text-2xl md:text-xl text-lg"
+        >
+          Exclusive
+        </h1>
       </div>
-    </div>
-  </header>
-  <!-- navbar -->
-  <nav
-    class="max-w-7xl mx-auto px-28 w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-2 gap-2 lg:justify-between md:justify-between items-center">
-    <!-- top -->
-    <div class="lg:w-2/12">
-      <h1 class="text-[#030712] lg:text-start md:text-start text-center font-bold lg:text-2xl md:text-xl text-lg">
-        Exclusive
-      </h1>
-    </div>
-    <!-- middle -->
-    <div
-      class="lg:w-5/12 flex lg:flex-row md:flex-row flex-col lg:justify-end lg:items-start md:items-start items-center text-lg lg:gap-7 md:gap-3 gap-3">
-      <a href="index.html"
-        class="duration-300 transition px-1 lg:text-base md:text-base text-sm hover:underline poppins">Home</a>
-      <a href="contact.html"
-        class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">Contact</a>
-      <a href="#"
-        class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm underline poppins">About</a>
-      <a href="./signup.html"
-        class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">Sign
-        Up</a>
-    </div>
-    <!-- right -->
-    <div
-      class="relative lg:w-4/12 flex flex-row lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md">
-      <input type="text" placeholder="What are you looking for?"
-        class="bg-[#f5f5f5] rounded text-xs lg:pr-8 pl-2 lg:py-2 outline-none poppins" />
-      <a href="wishlist.html" class="relative rounded-full">
-        <img src="./images/nav/wishlist.svg" alt="" class="" />
-      </a>
-      <a href="cart.html" class="rounded-full">
-        <img src="./images/nav/troly.svg" alt="" class="cursor-pointer" />
-      </a>
-      <a href="checkout.html" class="">
-        <img src="./images/about page/user.svg" alt="" class="" />
-      </a>
-      <button class="absolute lg:right-[150px]  lg:top-[14px] md:top-2 top-2">
-        <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
-      </button>
-    </div>
-  </nav>
-  <hr class="border lg:mb-14 md:mb-10 mb-8" />
-  <!--  our story section -->
-  <section class="max-w-7xl mx-auto lg:pl-28 md:pl-20 px-8 flex flex-col justify-between">
-    <p class="poppins"><span class="text-[#808080]">Home /</span> About</p>
-    <div class="flex flex-row justify-between">
-      <!-- main story -->
-      <div class="lg:py-16 md:py-12 py-6 w-full flex lg:flex-row flex-col gap-10">
-        <!-- left side -->
-        <div class="lg:w-5/12 md:w-full flex flex-col justify-center gap-7">
-          <h1 class="lg:text-5xl md:text-3xl text-xl font-semibold lg:text-start">
-            Our Story
-          </h1>
-          <div class="flex flex-col gap-5">
-            <p class="lg:pr-9 md:pr-5 text-justify poppins text-sm">
-              Launced in 2015, Exclusive is South Asia’s premier online
-              shopping makterplace with an active presense in Bangladesh.
-              Supported by wide range of tailored marketing, data and service
-              solutions, Exclusive has 10,500 sallers and 300 brands and
-              serves 3 millioons customers across the region.
-            </p>
-            <p class="lg:pr-9 md:pr-5 text-justify poppins text-sm">
-              Exclusive has more than 1 Million products to offer, growing at
-              a very fast. Exclusive offers a diverse assotment in categories
-              ranging from consumer.
-            </p>
+      <!-- middle -->
+      <div
+        class="lg:w-5/12 flex lg:flex-row md:flex-row flex-col lg:justify-end lg:items-start md:items-start items-center text-lg lg:gap-7 md:gap-3 gap-3"
+      >
+        <a
+          href="index.html"
+          class="duration-300 transition px-1 lg:text-base md:text-base text-sm hover:underline poppins"
+          >Home</a
+        >
+        <a
+          href="contact.html"
+          class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          >Contact</a
+        >
+        <a
+          href="#"
+          class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm underline poppins"
+          >About</a
+        >
+        <a
+          href="./signup.html"
+          class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          >Sign Up</a
+        >
+      </div>
+      <!-- right -->
+      <div
+        class="relative lg:w-4/12 flex flex-row lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md"
+      >
+        <input
+          type="text"
+          placeholder="What are you looking for?"
+          class="bg-[#f5f5f5] rounded text-xs lg:pr-8 pl-2 lg:py-2 outline-none poppins"
+        />
+        <a href="wishlist.html" class="relative rounded-full">
+          <img src="./images/nav/wishlist.svg" alt="" class="" />
+        </a>
+        <a href="cart.html" class="rounded-full">
+          <img src="./images/nav/troly.svg" alt="" class="cursor-pointer" />
+        </a>
+        <a href="checkout.html" class="">
+          <img src="./images/about page/user.svg" alt="" class="" />
+        </a>
+        <button class="absolute lg:right-[150px] lg:top-[14px] md:top-2 top-2">
+          <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
+        </button>
+      </div>
+    </nav>
+    <hr class="border lg:mb-14 md:mb-10 mb-8" />
+    <!--  our story section -->
+    <section
+      class="max-w-7xl mx-auto lg:pl-28 md:pl-20 px-8 flex flex-col justify-between"
+    >
+      <p class="poppins"><span class="text-[#808080]">Home /</span> About</p>
+      <div class="flex flex-row justify-between">
+        <!-- main story -->
+        <div
+          class="lg:py-16 md:py-12 py-6 w-full flex lg:flex-row flex-col gap-10"
+        >
+          <!-- left side -->
+          <div class="lg:w-5/12 md:w-full flex flex-col justify-center gap-7">
+            <h1
+              class="lg:text-5xl md:text-3xl text-xl font-semibold lg:text-start"
+            >
+              Our Story
+            </h1>
+            <div class="flex flex-col gap-5">
+              <p class="lg:pr-9 md:pr-5 text-justify poppins text-sm">
+                Launced in 2015, Exclusive is South Asia’s premier online
+                shopping makterplace with an active presense in Bangladesh.
+                Supported by wide range of tailored marketing, data and service
+                solutions, Exclusive has 10,500 sallers and 300 brands and
+                serves 3 millioons customers across the region.
+              </p>
+              <p class="lg:pr-9 md:pr-5 text-justify poppins text-sm">
+                Exclusive has more than 1 Million products to offer, growing at
+                a very fast. Exclusive offers a diverse assotment in categories
+                ranging from consumer.
+              </p>
+            </div>
+          </div>
+          <!-- right side -->
+          <div class="lg:w-7/12 md:w-full">
+            <img
+              src="./images/about page/women.svg"
+              alt=""
+              class="rounded-md"
+            />
           </div>
         </div>
-        <!-- right side -->
-        <div class="lg:w-7/12 md:w-full">
-          <img src="./images/about page/women.svg" alt="" class="rounded-md" />
+      </div>
+    </section>
+    <!-- all site section -->
+    <section
+      class="max-w-7xl mx-auto lg:px-28 md:px-12 px-5 flex lg:flex-row md:flex-row flex-col lg:gap-8 gap-4 justify-between items-center lg:py-20 md:py-12 py-5"
+    >
+      <!-- items1 -->
+      <div
+        class="w-3/12 h-52 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer hover:border-none"
+      >
+        <img
+          src="./images/about page/Services.svg"
+          alt=""
+          class="group-hover:hidden"
+        />
+        <img
+          src="./images/about page/Services1w.svg"
+          alt=""
+          class="hidden group-hover:block"
+        />
+        <h3 class="font-bold text-2xl">10.5k</h3>
+        <p class="text-base poppins">Sallers active our site</p>
+      </div>
+      <!-- service2 -->
+      <div
+        class="w-3/12 h-52 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer hover:border-none"
+      >
+        <img
+          src="./images/about page/Services-dollar-w.svg"
+          alt=""
+          class="group-hover:hidden"
+        />
+        <img
+          src="./images/about page/dolar.svg"
+          alt=""
+          class="hidden group-hover:block"
+        />
+        <h3 class="font-bold text-2xl">33k</h3>
+        <p class="text-base poppins">Mopnthly Produduct Sale</p>
+      </div>
+      <!-- service3 -->
+      <div
+        class="w-3/12 h-52 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer hover:border-none"
+      >
+        <img
+          src="./images/about page/customeractive.svg"
+          alt=""
+          class="group-hover:hidden"
+        />
+        <img
+          src="./images/about page/Servicesbw.svg"
+          alt=""
+          class="hidden group-hover:block"
+        />
+        <h3 class="font-bold text-2xl">45.5k</h3>
+        <p class="text-base poppins">Customer active in our site</p>
+      </div>
+      <!-- service4 -->
+      <div
+        class="w-3/12 h-52 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer hover:border-none"
+      >
+        <img
+          src="./images/about page/Servicesbagb.svg"
+          alt=""
+          class="group-hover:hidden"
+        />
+        <img
+          src="./images/about page/Servicesbagw.svg"
+          alt=""
+          class="hidden group-hover:block"
+        />
+        <h3 class="font-bold text-2xl">25k</h3>
+        <p class="text-base poppins">Anual gross scale in out site</p>
+      </div>
+    </section>
+    <!-- addess section -->
+    <section class="max-w-7xl mx-auto lg:px-28 py-12 relative">
+      <div
+        class="flex lg:flex-row md:flex-row flex-col lg:gap-10 md:gap-14 gap-10"
+      >
+        <!-- service1 -->
+        <div class="md:w-4/12 flex flex-col gap-6 rounded-md">
+          <div class="hover:bg-[#f5f5f5] rounded-md">
+            <img src="./images/about page/tom.svg" alt="" class="h-full" />
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3
+              class="font-semibold lg:text-3xl md:text-2xl text-xl lg:text-start text-center cursor-pointer"
+            >
+              Tom Cruise
+            </h3>
+            <p class="lg:text-start text-center poppins">Founder & Chairman</p>
+          </div>
+          <div class="flex flex-row lg:justify-normal justify-center gap-3">
+            <img
+              src="./images/about page/Twitter.svg"
+              alt=""
+              class="cursor-pointer"
+            />
+            <img
+              src="./images/about page/instagram.svg"
+              alt=""
+              class="cursor-pointer"
+            />
+            <img
+              src="./images/about page/Linkedin.svg"
+              alt=""
+              class="cursor-pointer"
+            />
+          </div>
+        </div>
+        <!-- service2 -->
+        <div class="md:w-4/12 flex flex-col gap-6 rounded-md">
+          <div class="hover:bg-[#f5f5f5] rounded-md">
+            <img src="./images/about page/emma.svg" alt="" class="h-full" />
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3
+              class="font-semibold lg:text-3xl md:text-2xl text-xl lg:text-start text-center cursor-pointer"
+            >
+              Emma Watson
+            </h3>
+            <p class="lg:text-start text-center poppins">Mannaging Director</p>
+          </div>
+          <div class="flex flex-row lg:justify-normal justify-center gap-3">
+            <img
+              src="./images/about page/Twitter.svg"
+              alt=""
+              class="cursor-pointer"
+            />
+            <img
+              src="./images/about page/instagram.svg"
+              alt=""
+              class="cursor-pointer"
+            />
+            <img
+              src="./images/about page/Linkedin.svg"
+              alt=""
+              class="cursor-pointer"
+            />
+          </div>
+        </div>
+        <!-- service3 -->
+        <div class="md:w-4/12 flex flex-col gap-6 rounded-md">
+          <div class="hover:bg-[#f5f5f5] rounded-md">
+            <img src="./images/about page/will.svg" alt="" class="h-full" />
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3
+              class="font-semibold lg:text-3xl md:text-2xl text-xl lg:text-start text-center cursor-pointer"
+            >
+              Will Smith
+            </h3>
+            <p class="lg:text-start text-center poppins">Founder & Chairman</p>
+          </div>
+          <div class="flex flex-row lg:justify-normal justify-center gap-3">
+            <img
+              src="./images/about page/Twitter.svg"
+              alt=""
+              class="cursor-pointer"
+            />
+            <img
+              src="./images/about page/instagram.svg"
+              alt=""
+              class="cursor-pointer"
+            />
+            <img
+              src="./images/about page/Linkedin.svg"
+              alt=""
+              class="cursor-pointer"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- all site section -->
-  <section
-    class="max-w-7xl mx-auto lg:px-28 md:px-12 px-5 flex lg:flex-row md:flex-row flex-col lg:gap-8 gap-4  justify-between items-center lg:py-20 md:py-12 py-5">
-    <!-- items1 -->
-    <div
-      class="w-3/12 h-52 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer hover:border-none">
-      <img src="./images/about page/Services.svg" alt="" class="group-hover:hidden">
-      <img src="./images/about page/Services1w.svg" alt="" class="hidden group-hover:block">
-      <h3 class="font-bold text-2xl">10.5k</h3>
-      <p class="text-base poppins">Sallers active our site</p>
-    </div>
-    <!-- service2 -->
-    <div
-      class="w-3/12 h-52 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer hover:border-none">
-      <img src="./images/about page/Services-dollar-w.svg" alt="" class="group-hover:hidden">
-      <img src="./images/about page/dolar.svg" alt="" class="hidden group-hover:block">
-      <h3 class="font-bold text-2xl">33k</h3>
-      <p class="text-base poppins">Mopnthly Produduct Sale</p>
-    </div>
-    <!-- service3 -->
-    <div
-      class="w-3/12 h-52 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer hover:border-none">
-      <img src="./images/about page/customeractive.svg" alt="" class="group-hover:hidden">
-      <img src="./images/about page/Servicesbw.svg" alt="" class="hidden group-hover:block">
-      <h3 class="font-bold text-2xl">45.5k</h3>
-      <p class="text-base poppins">Customer active in our site</p>
-    </div>
-    <!-- service4 -->
-    <div
-      class="w-3/12 h-52 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer hover:border-none">
-      <img src="./images/about page/Servicesbagb.svg" alt="" class="group-hover:hidden">
-      <img src="./images/about page/Servicesbagw.svg" alt="" class="hidden group-hover:block">
-      <h3 class="font-bold text-2xl">25k</h3>
-      <p class="text-base poppins">Anual gross scale in out site</p>
-    </div>
-  </section>
-  <!-- addess section -->
-  <section class="max-w-7xl mx-auto lg:px-28 py-12 relative">
-    <div class="flex lg:flex-row md:flex-row flex-col lg:gap-10 md:gap-14 gap-10">
-      <!-- service1 -->
-      <div class="md:w-4/12 flex flex-col gap-6 rounded-md">
-        <div class="hover:bg-[#f5f5f5] rounded-md">
-          <img src="./images/about page/tom.svg" alt="" class="h-full" />
-        </div>
-        <div class="flex flex-col gap-2">
-          <h3 class="font-semibold lg:text-3xl md:text-2xl text-xl lg:text-start text-center cursor-pointer">
-            Tom Cruise
+      <!-- slider -->
+      <div
+        class="absolute flex flex-row items-center gap-3 bottom-0 right-[580px]"
+      >
+        <div class="bg-[#b3b3b3] w-3 h-3 rounded-full cursor-pointer"></div>
+        <div class="bg-[#b3b3b3] w-3 h-3 rounded-full cursor-pointer"></div>
+        <div
+          class="bg-[#fb1314] w-4 h-4 rounded-full cursor-pointer border-[2px] border-white ring-[2px] ring-[#b3b3b3]"
+        ></div>
+        <div class="bg-[#808080] w-3 h-3 rounded-full cursor-pointer"></div>
+        <div class="bg-[#b3b3b3] w-3 h-3 rounded-full cursor-pointer"></div>
+      </div>
+    </section>
+    <!-- service section -->
+    <section
+      class="max-w-7xl mx-auto lg:pl-28 py-10 flex lg:flex-row md:flex-row flex-col lg:gap-20 md:gap-12 gap-10 justify-center items-center mt-10"
+    >
+      <!-- sirvice1 -->
+      <div class="flex flex-col justify-center items-center gap-5">
+        <img src="./images/service/truk.svg" alt="" class="" />
+        <div class="flex flex-col justify-center items-center gap-1">
+          <h3 class="font-bold lg:text-xl md:text-base text-lg md:text-center">
+            FREE AND FAST DELIVERY
           </h3>
-          <p class="lg:text-start text-center poppins">Founder & Chairman</p>
-        </div>
-        <div class="flex flex-row lg:justify-normal justify-center gap-3">
-          <img src="./images/about page/Twitter.svg" alt="" class="cursor-pointer" />
-          <img src="./images/about page/instagram.svg" alt="" class="cursor-pointer" />
-          <img src="./images/about page/Linkedin.svg" alt="" class="cursor-pointer" />
+          <p class="lg:text-start text-center poppins">
+            Free delivery for all orders over $140
+          </p>
         </div>
       </div>
       <!-- service2 -->
-      <div class="md:w-4/12 flex flex-col gap-6 rounded-md">
-        <div class="hover:bg-[#f5f5f5] rounded-md">
-          <img src="./images/about page/emma.svg" alt="" class="h-full" />
-        </div>
-        <div class="flex flex-col gap-2">
-          <h3 class="font-semibold lg:text-3xl md:text-2xl text-xl lg:text-start text-center cursor-pointer">
-            Emma Watson
+      <div class="flex flex-col justify-center items-center gap-5">
+        <img src="./images/service/headphone.svg" alt="" class="" />
+        <div class="flex flex-col justify-center items-center gap-1">
+          <h3 class="font-bold lg:text-xl text-lg md:text-center">
+            24/7 customer service
           </h3>
-          <p class="lg:text-start text-center poppins">Mannaging Director</p>
-        </div>
-        <div class="flex flex-row lg:justify-normal justify-center gap-3">
-          <img src="./images/about page/Twitter.svg" alt="" class="cursor-pointer" />
-          <img src="./images/about page/instagram.svg" alt="" class="cursor-pointer" />
-          <img src="./images/about page/Linkedin.svg" alt="" class="cursor-pointer" />
+          <p class="lg:text-start text-center poppins">
+            Friendly 24/7 customer support
+          </p>
         </div>
       </div>
       <!-- service3 -->
-      <div class="md:w-4/12 flex flex-col gap-6 rounded-md">
-        <div class="hover:bg-[#f5f5f5] rounded-md">
-          <img src="./images/about page/will.svg" alt="" class="h-full" />
-        </div>
-        <div class="flex flex-col gap-2">
-          <h3 class="font-semibold lg:text-3xl md:text-2xl text-xl lg:text-start text-center cursor-pointer">
-            Will Smith
+      <div class="flex flex-col justify-center items-center gap-5">
+        <img src="./images/service/tic.svg" alt="" class="" />
+        <div class="flex flex-col justify-center items-center gap-1">
+          <h3
+            class="font-bold lg:text-xl md:text-base text-lg lg:text-start text-center"
+          >
+            MONEY BACK GUARANTEE
           </h3>
-          <p class="lg:text-start text-center poppins">Founder & Chairman</p>
-        </div>
-        <div class="flex flex-row lg:justify-normal justify-center gap-3">
-          <img src="./images/about page/Twitter.svg" alt="" class="cursor-pointer" />
-          <img src="./images/about page/instagram.svg" alt="" class="cursor-pointer" />
-          <img src="./images/about page/Linkedin.svg" alt="" class="cursor-pointer" />
+          <p class="lg:text-start text-center poppins">
+            We return money within 30 days
+          </p>
         </div>
       </div>
-    </div>
-    <!-- slider -->
-    <div class="absolute flex flex-row items-center gap-3 bottom-0 right-[580px] ">
-      <div class="bg-[#b3b3b3] w-3 h-3 rounded-full cursor-pointer"></div>
-      <div class="bg-[#b3b3b3] w-3 h-3 rounded-full cursor-pointer"></div>
-      <div class="bg-[#fb1314] w-4 h-4 rounded-full cursor-pointer border-[2px] border-white ring-[2px] ring-[#b3b3b3]">
-      </div>
-      <div class="bg-[#808080] w-3 h-3 rounded-full cursor-pointer"></div>
-      <div class="bg-[#b3b3b3] w-3 h-3 rounded-full cursor-pointer"></div>
-    </div>
-  </section>
-  <!-- service section -->
-  <section
-    class="max-w-7xl mx-auto lg:pl-28 py-10 flex lg:flex-row md:flex-row flex-col lg:gap-20 md:gap-12 gap-10 justify-center items-center mt-10">
-    <!-- sirvice1 -->
-    <div class="flex flex-col justify-center items-center gap-5">
-      <img src="./images/service/truk.svg" alt="" class="" />
-      <div class="flex flex-col justify-center items-center gap-1">
-        <h3 class="font-bold lg:text-xl md:text-base text-lg md:text-center">
-          FREE AND FAST DELIVERY
-        </h3>
-        <p class="lg:text-start text-center poppins">Free delivery for all orders over $140</p>
-      </div>
-    </div>
-    <!-- service2 -->
-    <div class="flex flex-col justify-center items-center gap-5">
-      <img src="./images/service/headphone.svg" alt="" class="" />
-      <div class="flex flex-col justify-center items-center gap-1">
-        <h3 class="font-bold lg:text-xl text-lg md:text-center">
-          24/7 customer service
-        </h3>
-        <p class="lg:text-start text-center poppins">Friendly 24/7 customer support</p>
-      </div>
-    </div>
-    <!-- service3 -->
-    <div class="flex flex-col justify-center items-center gap-5">
-      <img src="./images/service/tic.svg" alt="" class="" />
-      <div class="flex flex-col justify-center items-center gap-1">
-        <h3 class="font-bold lg:text-xl md:text-base text-lg lg:text-start text-center">
-          MONEY BACK GUARANTEE
-        </h3>
-        <p class="lg:text-start text-center poppins">We return money within 30 days</p>
-      </div>
-    </div>
-  </section>
-  <!-- footer section -->
-  <footer class="bg-black lg:pt-20 md:pt-12 pt-8 mt-10">
-    <div
-      class="max-w-7xl mx-auto flex lg:flex-row md:flex-row flex-col items-start justify-between lg:gap-0 md:gap-3 gap-10 lg:px-28 md:px-5 px-10 mb-16">
-      <!-- exclusice -->
-      <div class="w-fit flex flex-col lg:items-start md:items-start items-center gap-4">
-        <h3 class="lg:text-2xl md:text-xl text-2xl font-bold text-white">
-          Exclusive
-        </h3>
-        <h4 class="text-white text-xl md:text-lg font-medium pt-3">
-          Subscribe
-        </h4>
-        <p class="text-white lg:text-base text-sm md:text-xs poppins">
-          Get 10% off your first order
-        </p>
-        <div class="relative">
-          <input
-            class="bg-transparent border-2 border-[#FFF] lg:py-2 py-1 lg:pl-3 md:pl-1 pl-2 rounded-md outline-none lg:w-full md:w-11/12 text-[#646464] lg:text-base md:text-xs poppins"
-            type="text" name="" id="" placeholder="Enter your Email" />
-          <img src="./images/footer/send.svg" alt=""
-            class="absolute lg:top-2 top-[6px] lg:right-4 right-6 cursor-pointer lg:h-7 md:h-4" />
-        </div>
-      </div>
-      <!-- support -->
-      <div class="w-fit flex flex-col gap-4 lg:pl-0 md:pl-0 pl-7">
-        <h4 class="text-white lg:text-xl md:text-lg text-xl lg:text-start md:text-start text-center font-semibold">
-          Support
-        </h4>
-        <p class="text-white pt-3 lg:text-start md:text-start text-center lg:text-base md:text-xs text-base poppins">
-          111 Bijoy sarani, Dhaka, <br />
-          DH 1515, Bangladesh.
-        </p>
-        <p
-          class="text-white cursor-pointer lg:text-start md:text-start text-center lg:text-base md:text-xs text-base poppins">
-          exclusive@gmail.com
-        </p>
-        <p class="text-white cursor-pointer lg:text-start md:text-start text-center poppins">
-          +88015-88888-9999
-        </p>
-      </div>
-      <!-- account -->
-      <div class="w-fit flex flex-col gap-3 md:gap-2 lg:pl-0 md:pl-0 pl-16">
-        <h4 class="text-white lg:text-xl md:text-lg text-lg lg:text-start md:text-start text-center font-semibold">
-          Account
-        </h4>
-        <a href="account.html"
-          class="text-white lg:text-base md:text-xs text-base pt-3 lg:text-start md:text-start text-center poppins">My
-          Account</a>
-        <a href="signin.html"
-          class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Login/Register</a>
-        <a href="cart.html"
-          class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Cart</a>
-        <a href="wishlist.html"
-          class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Wishlist</a>
-        <a href="checkout.html"
-          class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Shop</a>
-      </div>
-      <!-- quick link -->
-      <div class="w-fit flex flex-col gap-2 lg:pl-0 md:pl-0 pl-16">
-        <h4 class="text-white lg:text-xl md:text-lg text-lg lg:text-start md:text-start text-center font-semibold">
-          Quick Link
-        </h4>
-        <a href=""
-          class="text-white lg:text-base md:text-xs text-base pt-3 lg:text-start md:text-start text-center poppins">Privacy
-          Policy</a>
-        <a href=""
-          class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Terms
-          Of Use</a>
-        <a href=""
-          class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">FAQ</a>
-        <a href="contact.html"
-          class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Contact</a>
-      </div>
-      <!-- download app -->
-      <div class="w-fit flex flex-col gap-5">
-        <h4 class="text-white lg:text-xl md:text-lg text-lg lg:text-start md:text-start text-center font-semibold">
-          Download App
-        </h4>
-        <p class="text-[#afafaf] text-xs lg:text-start md:text-start text-center poppins">
-          Save $3 with App New User Only
-        </p>
-        <div class="flex flex-row gap-3">
-          <div class="">
-            <img src="./images/footer/Qr Code.svg" class="h-24 md:h-20" alt="" />
-          </div>
-          <div class="flex flex-col gap-3">
-            <a href=""><img src="./images/footer/GooglePlay.svg" class="w-32 md:w-24" alt="" /></a>
-            <a href=""><img src="./images/footer/appstore.svg" class="w-32 md:w-24" alt="" /></a>
-          </div>
-        </div>
+    </section>
+    <!-- footer section -->
+    <footer class="bg-black lg:pt-20 md:pt-12 pt-8 mt-10">
+      <div
+        class="max-w-7xl mx-auto flex lg:flex-row md:flex-row flex-col items-start justify-between lg:gap-0 md:gap-3 gap-10 lg:px-28 md:px-5 px-10 mb-16"
+      >
+        <!-- exclusice -->
         <div
-          class="flex flex-row lg:justify-normal md:justify-normal justify-center lg:items-start md:items-start items-center gap-5">
-          <a href="" class="">
-            <img src="./images/footer/Facebook.svg" alt="" class="" />
-          </a>
-          <a href="" class="">
-            <img src="./images/footer/Twitter.svg" alt="" class="" />
-          </a>
-          <a href="" class="">
-            <img src="./images/footer/instagram.svg" alt="" class="" />
-          </a>
-          <a href="" class="">
-            <img src="./images/footer/linkedin.svg" alt="" class="" />
-          </a>
+          class="w-fit flex flex-col lg:items-start md:items-start items-center gap-4"
+        >
+          <h3 class="lg:text-2xl md:text-xl text-2xl font-bold text-white">
+            Exclusive
+          </h3>
+          <h4 class="text-white text-xl md:text-lg font-medium pt-3">
+            Subscribe
+          </h4>
+          <p class="text-white lg:text-base text-sm md:text-xs poppins">
+            Get 10% off your first order
+          </p>
+          <div class="relative">
+            <input
+              class="bg-transparent border-2 border-[#FFF] lg:py-2 py-1 lg:pl-3 md:pl-1 pl-2 rounded-md outline-none lg:w-full md:w-11/12 text-[#646464] lg:text-base md:text-xs poppins"
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter your Email"
+            />
+            <img
+              src="./images/footer/send.svg"
+              alt=""
+              class="absolute lg:top-2 top-[6px] lg:right-4 right-6 cursor-pointer lg:h-7 md:h-4"
+            />
+          </div>
+        </div>
+        <!-- support -->
+        <div class="w-fit flex flex-col gap-4 lg:pl-0 md:pl-0 pl-7">
+          <h4
+            class="text-white lg:text-xl md:text-lg text-xl lg:text-start md:text-start text-center font-semibold"
+          >
+            Support
+          </h4>
+          <p
+            class="text-white pt-3 lg:text-start md:text-start text-center lg:text-base md:text-xs text-base poppins"
+          >
+            111 Bijoy sarani, Dhaka, <br />
+            DH 1515, Bangladesh.
+          </p>
+          <p
+            class="text-white cursor-pointer lg:text-start md:text-start text-center lg:text-base md:text-xs text-base poppins"
+          >
+            exclusive@gmail.com
+          </p>
+          <p
+            class="text-white cursor-pointer lg:text-start md:text-start text-center poppins"
+          >
+            +88015-88888-9999
+          </p>
+        </div>
+        <!-- account -->
+        <div class="w-fit flex flex-col gap-3 md:gap-2 lg:pl-0 md:pl-0 pl-16">
+          <h4
+            class="text-white lg:text-xl md:text-lg text-lg lg:text-start md:text-start text-center font-semibold"
+          >
+            Account
+          </h4>
+          <a
+            href="account.html"
+            class="text-white lg:text-base md:text-xs text-base pt-3 lg:text-start md:text-start text-center poppins"
+            >My Account</a
+          >
+          <a
+            href="signin.html"
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >Login/Register</a
+          >
+          <a
+            href="cart.html"
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >Cart</a
+          >
+          <a
+            href="wishlist.html"
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >Wishlist</a
+          >
+          <a
+            href="checkout.html"
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >Shop</a
+          >
+        </div>
+        <!-- quick link -->
+        <div class="w-fit flex flex-col gap-2 lg:pl-0 md:pl-0 pl-16">
+          <h4
+            class="text-white lg:text-xl md:text-lg text-lg lg:text-start md:text-start text-center font-semibold"
+          >
+            Quick Link
+          </h4>
+          <a
+            href=""
+            class="text-white lg:text-base md:text-xs text-base pt-3 lg:text-start md:text-start text-center poppins"
+            >Privacy Policy</a
+          >
+          <a
+            href=""
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >Terms Of Use</a
+          >
+          <a
+            href=""
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >FAQ</a
+          >
+          <a
+            href="contact.html"
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >Contact</a
+          >
+        </div>
+        <!-- download app -->
+        <div class="w-fit flex flex-col gap-5">
+          <h4
+            class="text-white lg:text-xl md:text-lg text-lg lg:text-start md:text-start text-center font-semibold"
+          >
+            Download App
+          </h4>
+          <p
+            class="text-[#afafaf] text-xs lg:text-start md:text-start text-center poppins"
+          >
+            Save $3 with App New User Only
+          </p>
+          <div class="flex flex-row gap-3">
+            <div class="">
+              <img
+                src="./images/footer/Qr Code.svg"
+                class="h-24 md:h-20"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-3">
+              <a href=""
+                ><img
+                  src="./images/footer/GooglePlay.svg"
+                  class="w-32 md:w-24"
+                  alt=""
+              /></a>
+              <a href=""
+                ><img
+                  src="./images/footer/appstore.svg"
+                  class="w-32 md:w-24"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div
+            class="flex flex-row lg:justify-normal md:justify-normal justify-center lg:items-start md:items-start items-center gap-5"
+          >
+            <a href="" class="">
+              <img src="./images/footer/Facebook.svg" alt="" class="" />
+            </a>
+            <a href="" class="">
+              <img src="./images/footer/Twitter.svg" alt="" class="" />
+            </a>
+            <a href="" class="">
+              <img src="./images/footer/instagram.svg" alt="" class="" />
+            </a>
+            <a href="" class="">
+              <img src="./images/footer/linkedin.svg" alt="" class="" />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <p class="text-[#3D3D3D] lg:text-xl md:text-lg text-base text-center py-5 border-t border-[#141414] poppins">
-      &copy; Copyright @devmanirul 2024. All right reserved.
-    </p>
-  </footer>
-</body>
-
+      <p
+        class="text-[#3D3D3D] lg:text-xl md:text-lg text-base text-center py-5 border-t border-[#141414] poppins"
+      >
+        &copy; Copyright @devmanirul 2024. All right reserved.
+      </p>
+    </footer>
+  </body>
 </html>

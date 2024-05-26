@@ -1,338 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>checkout page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- header -->
     <header class="bg-black">
-        <div class="max-w-7xl mx-auto px-28  text-white flex flex-row py-3 justify-end items-center text-sm gap-[106px]">
-            <div class="flex flex-row gap-2">
-                <p class=" poppins">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! </p>
-                <button class="border-b border-white font-semibold border-none outline-none underline poppins">
-                    ShopNow</button>
-            </div>
-            <div class="">
-                <select name="language" id="language"
-                    class=" bg-transparent poppins font-medium cursor-pointer outline-none">
-                    <option value="English" class="poppins font-medium text-black">English</option>
-                    <option value="Bangla" class="poppins font-medium text-black">Bangla</option>
-                </select>
-            </div>
+      <div
+        class="max-w-7xl mx-auto px-28 text-white flex flex-row py-3 justify-end items-center text-sm gap-[106px]"
+      >
+        <div class="flex flex-row gap-2">
+          <p class="poppins">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </p>
+          <button
+            class="border-b border-white font-semibold border-none outline-none underline poppins"
+          >
+            ShopNow
+          </button>
         </div>
+        <div class="">
+          <select
+            name="language"
+            id="language"
+            class="bg-transparent poppins font-medium cursor-pointer outline-none"
+          >
+            <option value="English" class="poppins font-medium text-black">
+              English
+            </option>
+            <option value="Bangla" class="poppins font-medium text-black">
+              Bangla
+            </option>
+          </select>
+        </div>
+      </div>
     </header>
     <!-- navbar -->
     <nav
-        class="max-w-7xl mx-auto px-28 w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center">
-        <!-- top -->
-        <div class="lg:w-2/12">
-            <h1 class="text-[#030712] lg:text-start md:text-start text-center font-bold lg:text-2xl md:text-xl text-lg">
-                Exclusive
-            </h1>
-        </div>
-        <!-- middle -->
-        <div
-            class="lg:w-5/12 flex lg:flex-row md:flex-row flex-col lg:justify-end lg:items-start md:items-start items-center text-lg lg:gap-8 md:gap-3 gap-3">
-            <a href="index.html" class="poppins px-1 lg:text-base md:text-base text-sm hover:underline poppins">Home</a>
-            <a href="contact.html"
-                class="poppins px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">Contact</a>
-            <a href="about.html"
-                class="poppins px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">About</a>
-            <a href="./signup.html"
-                class="poppins px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">Sign
-                Up</a>
-        </div>
-        <!-- right -->
-        <div
-            class="relative lg:w-4/12 flex flex-row lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md">
-            <input type="text" placeholder="What are you looking for?"
-                class="bg-[#f5f5f5] rounded text-xs lg:pr-8 pl-2 lg:py-2 outline-none poppins" />
-            <a href="wishlist.html" class="relative rounded-full">
-                <img src="./images/nav/wishlist.svg" alt="" class="" />
-                <div
-                    class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-0 md:top-1 top-0 lg:right-0 md:right-0 right-0">
-                    4
-                </div>
-            </a>
-            <a href="cart.html" class="relative rounded-full">
-                <img src="./images/nav/troly.svg" alt="" class="cursor-pointer" />
-                <div
-                    class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-0 md:top-1 top-0 lg:right-0 md:right-0 right-0">
-                    2
-                </div>
-            </a>
-            <a href="#" class="">
-                <img src="./images/about page/user.svg" alt="" class="" />
-            </a>
-            <button class="absolute lg:right-[150px]  lg:top-[14px] md:top-2 top-2">
-                <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
-            </button>
-        </div>
+      class="max-w-7xl mx-auto px-28 w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center"
+    >
+      <!-- top -->
+      <div class="lg:w-2/12">
+        <h1
+          class="text-[#030712] lg:text-start md:text-start text-center font-bold lg:text-2xl md:text-xl text-lg"
+        >
+          Exclusive
+        </h1>
+      </div>
+      <!-- middle -->
+      <div
+        class="lg:w-5/12 flex lg:flex-row md:flex-row flex-col lg:justify-end lg:items-start md:items-start items-center text-lg lg:gap-8 md:gap-3 gap-3"
+      >
+        <a
+          href="index.html"
+          class="poppins px-1 lg:text-base md:text-base text-sm hover:underline poppins"
+          >Home</a
+        >
+        <a
+          href="contact.html"
+          class="poppins px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          >Contact</a
+        >
+        <a
+          href="about.html"
+          class="poppins px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          >About</a
+        >
+        <a
+          href="./signup.html"
+          class="poppins px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          >Sign Up</a
+        >
+      </div>
+      <!-- right -->
+      <div
+        class="relative lg:w-4/12 flex flex-row lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md"
+      >
+        <input
+          type="text"
+          placeholder="What are you looking for?"
+          class="bg-[#f5f5f5] rounded text-xs lg:pr-8 pl-2 lg:py-2 outline-none poppins"
+        />
+        <a href="wishlist.html" class="relative rounded-full">
+          <img src="./images/nav/wishlist.svg" alt="" class="" />
+          <div
+            class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-0 md:top-1 top-0 lg:right-0 md:right-0 right-0"
+          >
+            4
+          </div>
+        </a>
+        <a href="cart.html" class="relative rounded-full">
+          <img src="./images/nav/troly.svg" alt="" class="cursor-pointer" />
+          <div
+            class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-0 md:top-1 top-0 lg:right-0 md:right-0 right-0"
+          >
+            2
+          </div>
+        </a>
+        <a href="#" class="">
+          <img src="./images/about page/user.svg" alt="" class="" />
+        </a>
+        <button class="absolute lg:right-[150px] lg:top-[14px] md:top-2 top-2">
+          <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
+        </button>
+      </div>
     </nav>
-    <hr class="border mb-10">
+    <hr class="border mb-10" />
     <!--  wishlist section -->
     <section class="max-w-7xl mx-auto lg:px-28 flex flex-col">
-        <!--  -->
-        <div class="flex flex-row justify-between items-center">
-            <!-- heading -->
-            <div class="py-3 mb-10">
-                <p class="poppins"><span class="text-[#808080]">Account / My Account / Product / View Cart /
-                    </span>ChackOut
-                </p>
-            </div>
+      <!--  -->
+      <div class="flex flex-row justify-between items-center">
+        <!-- heading -->
+        <div class="py-3 mb-10">
+          <p class="poppins">
+            <span class="text-[#808080]"
+              >Account / My Account / Product / View Cart / </span
+            >ChackOut
+          </p>
         </div>
+      </div>
     </section>
     <!--  -->
     <section class="max-w-7xl mx-auto lg:px-28 flex flex-col gap-8">
-        <h2 class="text-4xl font-semibold">Billing Details</h2>
-        <div class="flex lg:flex-row md:flex-row flex-col lg:gap-20 gap-10">
-            <!-- left side -->
-            <div class="flex flex-col gap-8 lg:w-6/12">
-                <!-- first name -->
-                <div class="flex flex-col gap-2">
-                    <p class="text-[#999999] poppins">First Name</p>
-                    <input type="text" class="p-3 bg-[#f5f5f5] outline-none rounded-md">
-                </div>
-                <!-- company name -->
-                <div class="flex flex-col gap-2">
-                    <p class="text-[#999999] poppins">Company Name</p>
-                    <input type="text" class="p-3 bg-[#f5f5f5] outline-none rounded-md">
-                </div>
-                <!-- Street Address -->
-                <div class="flex flex-col gap-2">
-                    <p class="text-[#999999] poppins">Street Address</p>
-                    <input type="text" class="p-3 bg-[#f5f5f5] outline-none rounded-md">
-                </div>
-                <!-- Apartment, floor, etc. (optional) -->
-                <div class="flex flex-col gap-2">
-                    <p class="text-[#999999] poppins">Apartment</p>
-                    <input type="text" class="p-3 bg-[#f5f5f5] outline-none rounded-md">
-                </div>
-                <!-- Town/City -->
-                <div class="flex flex-col gap-2">
-                    <p class="text-[#999999] poppins">Town/City</p>
-                    <input type="text" class="p-3 bg-[#f5f5f5] outline-none rounded-md">
-                </div>
-                <!-- phone Number -->
-                <div class="flex flex-col gap-2">
-                    <p class="text-[#999999] poppins">Phone Number</p>
-                    <input type="text" class="p-3 bg-[#f5f5f5] outline-none rounded-md">
-                </div>
-                <!-- Email Address -->
-                <div class="flex flex-col gap-2">
-                    <p class="text-[#999999] poppins">Email Address</p>
-                    <input type="text" class="p-3 bg-[#f5f5f5] outline-none rounded-md">
-                </div>
-                <!-- checkbox area -->
-                <div class="flex items-center mt-2">
-                    <input type="checkbox" id="option3" id="checkbox" name="checkbox" class="h-5 w-5 rounded-lg accent-red-600">
-                    <label for="option3" class="ml-2 cursor-pointer">Save this information for faster check-out next time</label>
-                </div>
-            </div>
-            <!-- right side -->
-            <div class="flex flex-col gap-3 lg:w-6/12">
-                <div class=" pr-14">
-                    <!-- patturn1 -->
-                    <div class="flex lg:flex-row justify-between items-center rounded-md py-5">
-                        <div class="flex flex-row items-center gap-6">
-                            <img src="./images/cart/gamepadred.svg" alt="" class="h-14">
-                            <p class="poppins cursor-pointer">H1 Gamepad</p>
-                        </div>
-                        <p class="">$650</p>
-                    </div>
-                    <!-- patturn2 -->
-                    <div class="flex lg:flex-row justify-between items-center rounded-md py-5">
-                        <div class="flex flex-row items-center gap-6">
-                            <img src="./images/cart/monitor.svg" alt="" class="h-14">
-                            <p class="poppins cursor-pointer">LCD Monitor</p>
-                        </div>
-                        <p class="">$1100</p>
-                    </div>
-                    <!--  -->
-                    <div class="flex flex-col gap-1">
-                        <!-- subtotal -->
-                        <div class="flex flex-row justify-between items-center py-3">
-                            <p class="poppins">Subtotal:</p>
-                            <p class="">$1750</p>
-                        </div>
-                        <hr class="border-black">
-                        <!-- subtota2 -->
-                        <div class="flex flex-row justify-between items-center py-3">
-                            <p class="poppins">Shipping:</p>
-                            <p class="">Free</p>
-                        </div>
-                        <hr class="border-black">
-                        <div class="flex flex-row justify-between items-center py-3">
-                            <p class="poppins">Total:</p>
-                            <p class="">$1750</p>
-                        </div>
-                    </div>
-                    <!-- payment area -->
-                    <div class="flex flex-col justify-between gap-3">
-                        <!-- select bank/left -->
-                        <div class="flex flex-row gap-1 justify-between">
-                            <div class="flex items-center">
-                                <input type="radio" id="option1" name="option" class="accent-black h-5 w-5">
-                                <label for="option1" class="ml-2 cursor-pointer">Bank</label>
-                            </div>
-                            <div class="flex flex-row gap-2">
-                                <img src="./images/checkout/Bkash.svg" alt="" class="cursor-pointer">
-                                <img src="./images/checkout/Visa.svg" alt="" class="cursor-pointer">
-                                <img src="./images/checkout/Mastercard.svg" alt="" class="cursor-pointer">
-                                <img src="./images/checkout/Nagad.svg" alt="" class="cursor-pointer">
-                            </div>
-                        </div>
-                        <div class="flex items-center mt-2">
-                            <input type="radio" id="option2" name="option" class="accent-black h-5 w-5">
-                            <label for="option2" class="ml-2 cursor-pointer">Cash on delivery</label>
-                        </div>
-                    </div>
-                </div>
-                <!-- coupon -->
-                <div class="flex lg:flex-row md:flex-col flex-col gap-6 mt-5 justify-between">
-                    <div class="">
-                        <input type="text" placeholder="Coupon Code"
-                            class="border-2 py-3 pl-4 pr-10 outline-none rounded-md poppins">
-                    </div>
-                    <div class="flex flex-row">
-                        <button class="py-3 px-7 rounded-md bg-[#db4444] text-white poppins">Apply Coupon</button>
-                    </div>
-                </div>
-                <!-- place order -->
-                <div class=" lex flex-row">
-                    <button class="py-3 px-10 mt-5 rounded-md bg-[#db4444] text-white poppins">Place Order</button>
-                </div>
-            </div>
+      <h2 class="text-4xl font-semibold">Billing Details</h2>
+      <div class="flex lg:flex-row md:flex-row flex-col lg:gap-20 gap-10">
+        <!-- left side -->
+        <div class="flex flex-col gap-8 lg:w-6/12">
+          <!-- first name -->
+          <div class="flex flex-col gap-2">
+            <p class="text-[#999999] poppins">First Name</p>
+            <input
+              type="text"
+              class="p-3 bg-[#f5f5f5] outline-none rounded-md"
+            />
+          </div>
+          <!-- company name -->
+          <div class="flex flex-col gap-2">
+            <p class="text-[#999999] poppins">Company Name</p>
+            <input
+              type="text"
+              class="p-3 bg-[#f5f5f5] outline-none rounded-md"
+            />
+          </div>
+          <!-- Street Address -->
+          <div class="flex flex-col gap-2">
+            <p class="text-[#999999] poppins">Street Address</p>
+            <input
+              type="text"
+              class="p-3 bg-[#f5f5f5] outline-none rounded-md"
+            />
+          </div>
+          <!-- Apartment, floor, etc. (optional) -->
+          <div class="flex flex-col gap-2">
+            <p class="text-[#999999] poppins">Apartment</p>
+            <input
+              type="text"
+              class="p-3 bg-[#f5f5f5] outline-none rounded-md"
+            />
+          </div>
+          <!-- Town/City -->
+          <div class="flex flex-col gap-2">
+            <p class="text-[#999999] poppins">Town/City</p>
+            <input
+              type="text"
+              class="p-3 bg-[#f5f5f5] outline-none rounded-md"
+            />
+          </div>
+          <!-- phone Number -->
+          <div class="flex flex-col gap-2">
+            <p class="text-[#999999] poppins">Phone Number</p>
+            <input
+              type="text"
+              class="p-3 bg-[#f5f5f5] outline-none rounded-md"
+            />
+          </div>
+          <!-- Email Address -->
+          <div class="flex flex-col gap-2">
+            <p class="text-[#999999] poppins">Email Address</p>
+            <input
+              type="text"
+              class="p-3 bg-[#f5f5f5] outline-none rounded-md"
+            />
+          </div>
+          <!-- checkbox area -->
+          <div class="flex items-center mt-2">
+            <input
+              type="checkbox"
+              id="option3"
+              id="checkbox"
+              name="checkbox"
+              class="h-5 w-5 rounded-lg accent-red-600"
+            />
+            <label for="option3" class="ml-2 cursor-pointer"
+              >Save this information for faster check-out next time</label
+            >
+          </div>
         </div>
+        <!-- right side -->
+        <div class="flex flex-col gap-3 lg:w-6/12">
+          <div class="pr-14">
+            <!-- patturn1 -->
+            <div
+              class="flex lg:flex-row justify-between items-center rounded-md py-5"
+            >
+              <div class="flex flex-row items-center gap-6">
+                <img src="./images/cart/gamepadred.svg" alt="" class="h-14" />
+                <p class="poppins cursor-pointer">H1 Gamepad</p>
+              </div>
+              <p class="">$650</p>
+            </div>
+            <!-- patturn2 -->
+            <div
+              class="flex lg:flex-row justify-between items-center rounded-md py-5"
+            >
+              <div class="flex flex-row items-center gap-6">
+                <img src="./images/cart/monitor.svg" alt="" class="h-14" />
+                <p class="poppins cursor-pointer">LCD Monitor</p>
+              </div>
+              <p class="">$1100</p>
+            </div>
+            <!--  -->
+            <div class="flex flex-col gap-1">
+              <!-- subtotal -->
+              <div class="flex flex-row justify-between items-center py-3">
+                <p class="poppins">Subtotal:</p>
+                <p class="">$1750</p>
+              </div>
+              <hr class="border-black" />
+              <!-- subtota2 -->
+              <div class="flex flex-row justify-between items-center py-3">
+                <p class="poppins">Shipping:</p>
+                <p class="">Free</p>
+              </div>
+              <hr class="border-black" />
+              <div class="flex flex-row justify-between items-center py-3">
+                <p class="poppins">Total:</p>
+                <p class="">$1750</p>
+              </div>
+            </div>
+            <!-- payment area -->
+            <div class="flex flex-col justify-between gap-3">
+              <!-- select bank/left -->
+              <div class="flex flex-row gap-1 justify-between">
+                <div class="flex items-center">
+                  <input
+                    type="radio"
+                    id="option1"
+                    name="option"
+                    class="accent-black h-5 w-5"
+                  />
+                  <label for="option1" class="ml-2 cursor-pointer">Bank</label>
+                </div>
+                <div class="flex flex-row gap-2">
+                  <img
+                    src="./images/checkout/Bkash.svg"
+                    alt=""
+                    class="cursor-pointer"
+                  />
+                  <img
+                    src="./images/checkout/Visa.svg"
+                    alt=""
+                    class="cursor-pointer"
+                  />
+                  <img
+                    src="./images/checkout/Mastercard.svg"
+                    alt=""
+                    class="cursor-pointer"
+                  />
+                  <img
+                    src="./images/checkout/Nagad.svg"
+                    alt=""
+                    class="cursor-pointer"
+                  />
+                </div>
+              </div>
+              <div class="flex items-center mt-2">
+                <input
+                  type="radio"
+                  id="option2"
+                  name="option"
+                  class="accent-black h-5 w-5"
+                />
+                <label for="option2" class="ml-2 cursor-pointer"
+                  >Cash on delivery</label
+                >
+              </div>
+            </div>
+          </div>
+          <!-- coupon -->
+          <div
+            class="flex lg:flex-row md:flex-col flex-col gap-6 mt-5 justify-between"
+          >
+            <div class="">
+              <input
+                type="text"
+                placeholder="Coupon Code"
+                class="border-2 py-3 pl-4 pr-10 outline-none rounded-md poppins"
+              />
+            </div>
+            <div class="flex flex-row">
+              <button
+                class="py-3 px-7 rounded-md bg-[#db4444] text-white poppins"
+              >
+                Apply Coupon
+              </button>
+            </div>
+          </div>
+          <!-- place order -->
+          <div class="lex flex-row">
+            <button
+              class="py-3 px-10 mt-5 rounded-md bg-[#db4444] text-white poppins"
+            >
+              Place Order
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- footer section -->
     <footer class="bg-black lg:pt-20 md:pt-12 pt-8 mt-10">
+      <div
+        class="max-w-7xl mx-auto flex lg:flex-row md:flex-row flex-col items-start justify-between lg:gap-0 md:gap-3 gap-10 lg:px-28 md:px-5 px-10 mb-16"
+      >
+        <!-- exclusice -->
         <div
-            class="max-w-7xl mx-auto flex lg:flex-row md:flex-row flex-col items-start justify-between lg:gap-0 md:gap-3 gap-10 lg:px-28 md:px-5 px-10 mb-16">
-            <!-- exclusice -->
-            <div class="w-fit flex flex-col lg:items-start md:items-start items-center gap-4">
-                <h3 class="lg:text-2xl md:text-xl text-2xl font-bold text-white">
-                    Exclusive
-                </h3>
-                <h4 class="text-white text-xl md:text-lg font-medium pt-3">
-                    Subscribe
-                </h4>
-                <p class="text-white lg:text-base text-sm md:text-xs poppins">
-                    Get 10% off your first order
-                </p>
-                <div class="relative">
-                    <input
-                        class="bg-transparent border-2 border-[#FFF] lg:py-2 py-1 lg:pl-3 md:pl-1 pl-2 rounded-md outline-none lg:w-full md:w-11/12 text-[#646464] lg:text-base md:text-xs poppins"
-                        type="text" name="" id="" placeholder="Enter your Email" />
-                    <img src="./images/footer/send.svg" alt=""
-                        class="absolute lg:top-2 top-[6px] lg:right-4 right-6 cursor-pointer lg:h-7 md:h-4" />
-                </div>
-            </div>
-            <!-- support -->
-            <div class="w-fit flex flex-col gap-4 lg:pl-0 md:pl-0 pl-7">
-                <h4
-                    class="text-white lg:text-xl md:text-lg text-xl lg:text-start md:text-start text-center font-semibold">
-                    Support
-                </h4>
-                <p
-                    class="text-white pt-3 lg:text-start md:text-start text-center lg:text-base md:text-xs text-base poppins">
-                    111 Bijoy sarani, Dhaka, <br />
-                    DH 1515, Bangladesh.
-                </p>
-                <p
-                    class="text-white cursor-pointer lg:text-start md:text-start text-center lg:text-base md:text-xs text-base poppins">
-                    exclusive@gmail.com
-                </p>
-                <p class="text-white cursor-pointer lg:text-start md:text-start text-center poppins">
-                    +88015-88888-9999
-                </p>
-            </div>
-            <!-- account -->
-            <div class="w-fit flex flex-col gap-3 md:gap-2 lg:pl-0 md:pl-0 pl-16">
-                <h4
-                    class="text-white lg:text-xl md:text-lg text-lg lg:text-start md:text-start text-center font-semibold">
-                    Account
-                </h4>
-                <a href="account.html"
-                    class="text-white lg:text-base md:text-xs text-base pt-3 lg:text-start md:text-start text-center poppins">My
-                    Account</a>
-                <a href="signin.html"
-                    class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Login/Register</a>
-                <a href="cart.html"
-                    class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Cart</a>
-                <a href="wishlist.html"
-                    class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Wishlist</a>
-                <a href="checkout.html"
-                    class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Shop</a>
-            </div>
-            <!-- quick link -->
-            <div class="w-fit flex flex-col gap-2 lg:pl-0 md:pl-0 pl-16">
-                <h4
-                    class="text-white lg:text-xl md:text-lg text-lg lg:text-start md:text-start text-center font-semibold">
-                    Quick Link
-                </h4>
-                <a href=""
-                    class="text-white lg:text-base md:text-xs text-base pt-3 lg:text-start md:text-start text-center poppins">Privacy
-                    Policy</a>
-                <a href=""
-                    class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Terms
-                    Of Use</a>
-                <a href=""
-                    class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">FAQ</a>
-                <a href="contact.html"
-                    class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins">Contact</a>
-            </div>
-            <!-- download app -->
-            <div class="w-fit flex flex-col gap-5">
-                <h4
-                    class="text-white lg:text-xl md:text-lg text-lg lg:text-start md:text-start text-center font-semibold">
-                    Download App
-                </h4>
-                <p class="text-[#afafaf] text-xs lg:text-start md:text-start text-center poppins">
-                    Save $3 with App New User Only
-                </p>
-                <div class="flex flex-row gap-3">
-                    <div class="">
-                        <img src="./images/footer/Qr Code.svg" class="h-24 md:h-20" alt="" />
-                    </div>
-                    <div class="flex flex-col gap-3">
-                        <a href=""><img src="./images/footer/GooglePlay.svg" class="w-32 md:w-24" alt="" /></a>
-                        <a href=""><img src="./images/footer/appstore.svg" class="w-32 md:w-24" alt="" /></a>
-                    </div>
-                </div>
-                <div
-                    class="flex flex-row lg:justify-normal md:justify-normal justify-center lg:items-start md:items-start items-center gap-5">
-                    <a href="" class="">
-                        <img src="./images/footer/Facebook.svg" alt="" class="" />
-                    </a>
-                    <a href="" class="">
-                        <img src="./images/footer/Twitter.svg" alt="" class="" />
-                    </a>
-                    <a href="" class="">
-                        <img src="./images/footer/instagram.svg" alt="" class="" />
-                    </a>
-                    <a href="" class="">
-                        <img src="./images/footer/linkedin.svg" alt="" class="" />
-                    </a>
-                </div>
-            </div>
+          class="w-fit flex flex-col lg:items-start md:items-start items-center gap-4"
+        >
+          <h3 class="lg:text-2xl md:text-xl text-2xl font-bold text-white">
+            Exclusive
+          </h3>
+          <h4 class="text-white text-xl md:text-lg font-medium pt-3">
+            Subscribe
+          </h4>
+          <p class="text-white lg:text-base text-sm md:text-xs poppins">
+            Get 10% off your first order
+          </p>
+          <div class="relative">
+            <input
+              class="bg-transparent border-2 border-[#FFF] lg:py-2 py-1 lg:pl-3 md:pl-1 pl-2 rounded-md outline-none lg:w-full md:w-11/12 text-[#646464] lg:text-base md:text-xs poppins"
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter your Email"
+            />
+            <img
+              src="./images/footer/send.svg"
+              alt=""
+              class="absolute lg:top-2 top-[6px] lg:right-4 right-6 cursor-pointer lg:h-7 md:h-4"
+            />
+          </div>
         </div>
-        <p class="text-[#3D3D3D] lg:text-xl md:text-lg text-base text-center py-5 border-t border-[#141414] poppins">
-            &copy; Copyright @devmanirul 2024. All right reserved.
-        </p>
+        <!-- support -->
+        <div class="w-fit flex flex-col gap-4 lg:pl-0 md:pl-0 pl-7">
+          <h4
+            class="text-white lg:text-xl md:text-lg text-xl lg:text-start md:text-start text-center font-semibold"
+          >
+            Support
+          </h4>
+          <p
+            class="text-white pt-3 lg:text-start md:text-start text-center lg:text-base md:text-xs text-base poppins"
+          >
+            111 Bijoy sarani, Dhaka, <br />
+            DH 1515, Bangladesh.
+          </p>
+          <p
+            class="text-white cursor-pointer lg:text-start md:text-start text-center lg:text-base md:text-xs text-base poppins"
+          >
+            exclusive@gmail.com
+          </p>
+          <p
+            class="text-white cursor-pointer lg:text-start md:text-start text-center poppins"
+          >
+            +88015-88888-9999
+          </p>
+        </div>
+        <!-- account -->
+        <div class="w-fit flex flex-col gap-3 md:gap-2 lg:pl-0 md:pl-0 pl-16">
+          <h4
+            class="text-white lg:text-xl md:text-lg text-lg lg:text-start md:text-start text-center font-semibold"
+          >
+            Account
+          </h4>
+          <a
+            href="account.html"
+            class="text-white lg:text-base md:text-xs text-base pt-3 lg:text-start md:text-start text-center poppins"
+            >My Account</a
+          >
+          <a
+            href="signin.html"
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >Login/Register</a
+          >
+          <a
+            href="cart.html"
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >Cart</a
+          >
+          <a
+            href="wishlist.html"
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >Wishlist</a
+          >
+          <a
+            href="checkout.html"
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >Shop</a
+          >
+        </div>
+        <!-- quick link -->
+        <div class="w-fit flex flex-col gap-2 lg:pl-0 md:pl-0 pl-16">
+          <h4
+            class="text-white lg:text-xl md:text-lg text-lg lg:text-start md:text-start text-center font-semibold"
+          >
+            Quick Link
+          </h4>
+          <a
+            href=""
+            class="text-white lg:text-base md:text-xs text-base pt-3 lg:text-start md:text-start text-center poppins"
+            >Privacy Policy</a
+          >
+          <a
+            href=""
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >Terms Of Use</a
+          >
+          <a
+            href=""
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >FAQ</a
+          >
+          <a
+            href="contact.html"
+            class="text-white lg:text-base md:text-xs text-base lg:text-start md:text-start text-center poppins"
+            >Contact</a
+          >
+        </div>
+        <!-- download app -->
+        <div class="w-fit flex flex-col gap-5">
+          <h4
+            class="text-white lg:text-xl md:text-lg text-lg lg:text-start md:text-start text-center font-semibold"
+          >
+            Download App
+          </h4>
+          <p
+            class="text-[#afafaf] text-xs lg:text-start md:text-start text-center poppins"
+          >
+            Save $3 with App New User Only
+          </p>
+          <div class="flex flex-row gap-3">
+            <div class="">
+              <img
+                src="./images/footer/Qr Code.svg"
+                class="h-24 md:h-20"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-3">
+              <a href=""
+                ><img
+                  src="./images/footer/GooglePlay.svg"
+                  class="w-32 md:w-24"
+                  alt=""
+              /></a>
+              <a href=""
+                ><img
+                  src="./images/footer/appstore.svg"
+                  class="w-32 md:w-24"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div
+            class="flex flex-row lg:justify-normal md:justify-normal justify-center lg:items-start md:items-start items-center gap-5"
+          >
+            <a href="" class="">
+              <img src="./images/footer/Facebook.svg" alt="" class="" />
+            </a>
+            <a href="" class="">
+              <img src="./images/footer/Twitter.svg" alt="" class="" />
+            </a>
+            <a href="" class="">
+              <img src="./images/footer/instagram.svg" alt="" class="" />
+            </a>
+            <a href="" class="">
+              <img src="./images/footer/linkedin.svg" alt="" class="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <p
+        class="text-[#3D3D3D] lg:text-xl md:text-lg text-base text-center py-5 border-t border-[#141414] poppins"
+      >
+        &copy; Copyright @devmanirul 2024. All right reserved.
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>

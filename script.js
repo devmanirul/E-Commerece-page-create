@@ -2,7 +2,6 @@
 $(document).ready(function () {
   $(".flash_cart").slick({
     // setting-name: setting-value
-
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
@@ -10,6 +9,7 @@ $(document).ready(function () {
     nextArrow: ".next",
   });
 });
+
 // Browse by catagory
 $(document).ready(function () {
   $(".catagoryCard").slick({
@@ -18,9 +18,10 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: true,
     prevArrow: ".Cprevious",
-    nextArrow: ".Cnext",   
+    nextArrow: ".Cnext",
   });
 });
+
 // explore our products
 $(document).ready(function () {
   $(".explore").slick({
