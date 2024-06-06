@@ -85,22 +85,26 @@
       </div>
       <!-- right -->
       <div
-        class="relative lg:w-4/12 flex flex-row lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md"
+        class="relative flex lg:flex-row md:flex-row flex-col lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md"
       >
         <input
           type="text"
           placeholder="What are you looking for?"
           class="bg-[#f5f5f5] rounded text-xs pr-8 pl-2 py-2 outline-none poppins"
         />
-        <a href="wishlist.html" class="relative rounded-full">
-          <img src="./images/nav/wishlist.svg" alt="" class="" />
-        </a>
-        <a href="cart.html" class="rounded-full">
-          <img src="./images/nav/troly.svg" alt="" class="cursor-pointer" />
-        </a>
-        <button class="absolute lg:right-[103px] right-[20px] lg:top-[14px] md:top-2 top-[5px]">
-          <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
+        <button
+          class="absolute lg:right-[155px] md:right-[113px] right-[5px] lg:top-[14px] top-[6px]"
+        >
+          <img src="./images/nav/search.svg" alt="" class="" />
         </button>
+        <div class="flex flex-row items-center justify-center gap-5">
+          <a href="wishlist.html" class="relative rounded-full">
+            <img src="./images/nav/wishlist.svg" alt="" class="" />
+          </a>
+          <a href="cart.html" class="rounded-full">
+            <img src="./images/nav/troly.svg" alt="" class="cursor-pointer" />
+          </a>
+        </div>
       </div>
     </nav>
     <hr class="border lg:mb-14 md:mb-10 mb-8" />
