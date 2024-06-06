@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- header -->
     <header class="bg-black">
       <div
@@ -47,148 +46,204 @@
         </div>
       </div>
     </header>
-    <!-- navbar -->     
+    <!-- navbar -->
     <nav
-        class="max-w-7xl mx-auto px-28 w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center">
-        <!-- top -->
-        <div class="lg:w-2/12">
-            <h1 class="text-[#030712] lg:text-start md:text-start text-center font-bold lg:text-2xl md:text-xl text-lg">
-                Exclusive
-            </h1>
-        </div>
-        <!-- middle -->
-        <div
-            class="lg:w-5/12 flex lg:flex-row md:flex-row flex-col lg:justify-end lg:items-start md:items-start items-center text-lg lg:gap-8 md:gap-3 gap-3">
-            <a href="index.html"
-                class="duration-300 transition px-1 lg:text-base md:text-base text-sm hover:underline poppins">Home</a>
-            <a href="contact.html"
-                class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">Contact</a>
-            <a href="about.html"
-                class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">About</a>
-            <a href="./signup.html"
-                class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins">Sign
-                Up</a>
-        </div>
-        <!-- right -->
-        <div
-            class="relative flex lg:flex-row md:flex-row flex-col lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md">
-            <input type="text" placeholder="What are you looking for?"
-                class="bg-[#f5f5f5] rounded text-xs pr-8 pl-2 py-2 outline-none poppins" />
-            <button class="absolute lg:right-[150px] right-[30px] lg:top-[14px] md:top-2 top-[5px]">
-            <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
-          </button>
-                <!-- wishlist -->
-            <div class="flex flex-row"></div>
-          
-        </div>
+      class="max-w-7xl mx-auto px-28 w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center"
+    >
+      <!-- top -->
+      <div class="lg:w-2/12">
+        <h1
+          class="text-[#030712] lg:text-start md:text-start text-center font-bold lg:text-2xl md:text-xl text-lg"
+        >
+          Exclusive
+        </h1>
+      </div>
+      <!-- middle -->
+      <div
+        class="lg:w-5/12 flex lg:flex-row md:flex-row flex-col lg:justify-end lg:items-start md:items-start items-center text-lg lg:gap-8 md:gap-3 gap-3"
+      >
+        <a
+          href="index.html"
+          class="duration-300 transition px-1 lg:text-base md:text-base text-sm hover:underline poppins"
+          >Home</a
+        >
+        <a
+          href="contact.html"
+          class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          >Contact</a
+        >
+        <a
+          href="about.html"
+          class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          >About</a
+        >
+        <a
+          href="./signup.html"
+          class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          >Sign Up</a
+        >
+      </div>
+      <!-- right -->
+      <div
+        class="relative flex lg:flex-row md:flex-row flex-col lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md"
+      >
+        <input
+          type="text"
+          placeholder="What are you looking for?"
+          class="bg-[#f5f5f5] rounded text-xs pr-8 pl-2 py-2 outline-none poppins"
+        />
+        <button
+          class="absolute lg:right-[20px] md:right-[12px] right-[5px] lg:top-[14px] md:top-2 top-[5px]"
+        >
+          <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
+        </button>
+        <!-- wishlist -->
+        <div class="flex flex-row"></div>
+      </div>
     </nav>
-    <hr class="border">
+    <hr class="border" />
     <!--  wishlist section -->
     <section
-        class="max-w-7xl mx-auto lg:px-28 md:px-12 px-5 flex flex-col lg:gap-10 md:gap-7 gap-5">
-        <!--  -->
-        <div class="flex flex-row justify-between items-center">
-            <!-- heading -->
-            <div class="py-8">
-                <p class="poppins"><span class="text-[#808080] poppins">Home /</span> Cart</p>
-            </div>
+      class="max-w-7xl mx-auto lg:px-28 md:px-12 px-5 flex flex-col lg:gap-10 md:gap-7 gap-5"
+    >
+      <!--  -->
+      <div class="flex flex-row justify-between items-center">
+        <!-- heading -->
+        <div class="py-8">
+          <p class="poppins">
+            <span class="text-[#808080] poppins">Home /</span> Cart
+          </p>
         </div>
-        <!-- patturn -->
+      </div>
+      <!-- patturn -->
+      <div
+        class="flex flex-row lg:gap-5 md:gap-3 gap-2 justify-between border rounded-md shadow-[1px_1px_7px_1px_rgba(0,0,0,.1)] lg:px-7 md:px-5 px-3 py-5"
+      >
+        <p class="poppins lg:text-base md:text-base text-sm">Product</p>
+        <p class="poppins lg:pl-28 lg:text-base md:text-base text-sm">Price</p>
+        <p class="poppins lg:pl-10 lg:text-base md:text-base text-sm">Quantity</p>
+        <p class="poppins lg:text-base md:text-base text-sm">Subtotal</p>
+      </div>
+      <!-- patturn 1 -->
+      <div
+        class="flex flex-row justify-between items-center border rounded-md shadow-[1px_1px_7px_1px_rgba(0,0,0,.1)] lg:px-7 px-1 py-5"
+      >
+        <div class="relative group flex flex-row items-center gap-4">
+          <img src="./images/cart/monitor.svg" alt="" class="h-10 cursor-pointer" />
+          <p class="poppins lg:text-base md:text-base text-xs cursor-pointer">LCD Monitor</p>
+          <div
+            class="absolute hidden group-hover:block bg-red-600 rounded-full px-1 top-0 left-0"
+          >
+            <p class="text-white text-xs">X</p>
+          </div>
+        </div>
+        <p class="lg:text-base md:text-base text-xs">$650</p>
         <div
-            class="flex flex-row lg:gap-5 md:gap-3 gap-2 justify-between border rounded-md shadow-[1px_1px_7px_1px_rgba(0,0,0,.1)] lg:px-7 md:px-5 px-3 py-5 ">
-            <p class="poppins">Product</p>
-            <p class="poppins lg:pl-28">Price</p>
-            <p class="poppins lg:pl-10">Quantity</p>
-            <p class="poppins">Subtotal</p>
+          class="flex flex-row items-center border gap-2 lg:px-4 md:px-4 px-1 lg:py-2 md:py-1 py-0 rounded-md"
+        >
+          <p class="lg:text-base md:text-base text-xs">01</p>
+          <div class="flex flex-col gap-1">
+            <img src="./images/cart/Drop-Up-Small.svg" alt="" class="" />
+            <img src="./images/cart/Drop-Down-Small.svg" alt="" class="" />
+          </div>
         </div>
-        <!-- patturn 1 -->
+        <p class="lg:text-base md:text-base text-xs">$650</p>
+      </div>
+      <!-- patturn2 -->
+      <div
+        class="flex flex-row justify-between items-center border rounded-md shadow-[1px_1px_7px_1px_rgba(0,0,0,.1)] lg:px-7 md:px-5 px-1 lg:py-5 md:py-3 py-2"
+      >
+        <div class="relative group  flex flex-row items-center lg:gap-4 md:gap-3 gap-1">
+          <img src="./images/cart/gamepadred.svg" alt="" class="h-10" />
+          <p class="poppins lg:text-base md:text-base text-xs">H1 Gamepad</p>
+          <div
+            class="absolute hidden group-hover:block bg-red-600 rounded-full px-1 top-0 left-0"
+          >
+            <p class="text-white text-xs">X</p>
+          </div>
+        </div>
+        <p class="lg:text-base md:text-base text-xs">$550</p>
         <div
-            class="flex flex-row justify-between items-center border rounded-md shadow-[1px_1px_7px_1px_rgba(0,0,0,.1)] px-7 py-5">
-            <div class="relative flex flex-row items-center gap-4">
-                <img src="./images/cart/monitor.svg" alt="" class="h-10">
-                <p class="poppins">LCD Monitor</p>
-                <div class="absolute bg-red-600 rounded-full px-1 top-0 left-0 cursor-pointer">
-                    <p class="text-white text-xs">X</p>
-                </div>
-            </div>
-            <p class="">$650</p>
-            <div class="flex flex-row items-center border gap-2 px-4 py-2 rounded-md">
-                <p class="">01</p>
-                <div class="flex flex-col gap-1">
-                    <img src="./images/cart/Drop-Up-Small.svg" alt="" class="">
-                    <img src="./images/cart/Drop-Down-Small.svg" alt="" class="">
-                </div>
-            </div>
-            <p class="">$650</p>
+          class="flex flex-row items-center border gap-2 lg:px-4 md:px-3 px-1 lg:py-2 md:py-2 py-0 rounded-md"
+        >
+          <p class="lg:text-base md:text-base text-xs">02</p>
+          <div class="flex flex-col gap-1">
+            <img src="./images/cart/Drop-Up-Small.svg" alt="" class="" />
+            <img src="./images/cart/Drop-Down-Small.svg" alt="" class="" />
+          </div>
         </div>
-        <!-- patturn2 -->
-        <div
-            class="flex flex-row justify-between items-center border rounded-md shadow-[1px_1px_7px_1px_rgba(0,0,0,.1)] px-7 py-5">
-            <div class="flex flex-row items-center gap-4">
-                <img src="./images/cart/gamepadred.svg" alt="" class="h-10">
-                <p class="poppins">H1 Gamepad</p>
-            </div>
-            <p class="">$550</p>
-            <div class="flex flex-row items-center border gap-2 px-4 py-2 rounded-md">
-                <p class="">02</p>
-                <div class="flex flex-col gap-1">
-                    <img src="./images/cart/Drop-Up-Small.svg" alt="" class="">
-                    <img src="./images/cart/Drop-Down-Small.svg" alt="" class="">
-                </div>
-            </div>
-            <p class="">$1100</p>
-        </div>
-        <!-- select button -->
-        <div class="flex lg:flex-row md:flex-row flex-col justify-between lg:gap-0 md:gap-0 gap-5">
-            <a href="./productdetailspage.html" class="border-2 px-10 py-4 font-semibold rounded-md poppins">Return To
-                Shop</a>
-            <button class="border-2 px-10 py-4 font-semibold rounded-md poppins">Update Cart</button>
-        </div>
+        <p class="lg:text-base md:text-base text-xs">$1100</p>
+      </div>
+      <!-- select button -->
+      <div
+        class="flex lg:flex-row md:flex-row flex-col justify-between lg:gap-0 md:gap-0 gap-5"
+      >
+        <a
+          href="./productdetailspage.html"
+          class="border-2 px-10 py-4 font-semibold rounded-md poppins text-center"
+          >Return To Shop</a
+        >
+        <button class="border-2 px-10 py-4 font-semibold rounded-md poppins">
+          Update Cart
+        </button>
+      </div>
     </section>
     <!--  -->
-    <section class="max-w-7xl mx-auto lg:px-28 md:px-12 px-5 flex lg:flex-row md:flex-row flex-col justify-between gap-5">
-        <!-- left -->
-        <div class="flex lg:flex-row md:flex-row flex-col lg:w-7/12">
-            <div
-                class="flex lg:flex-row md:flex-row flex-col lg:justify-between md:justify-normal justify-center lg:items-start md:items-start items-center gap-5">
-                <div class="flex flex-row">
-                    <div class="">
-                        <input type="text" placeholder="Coupon Code"
-                            class="border-2 py-4 pl-3 outline-none rounded-md poppins">
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <button class="px-10 py-4 rounded-md bg-[#db4444] text-white poppins">Apply Coupon</button>
-                </div>
+    <section
+      class="max-w-7xl mx-auto lg:px-28 md:px-12 px-5 flex lg:flex-row md:flex-row flex-col justify-between gap-5 pt-4"
+    >
+      <!-- left -->
+      <div class="flex lg:flex-row md:flex-row flex-col lg:w-7/12">
+        <div
+          class="flex lg:flex-row md:flex-row flex-col lg:justify-between md:justify-normal justify-center lg:items-start md:items-start items-center gap-5"
+        >
+          <div class="flex flex-row">
+            <div class="">
+              <input
+                type="text"
+                placeholder="Coupon Code"
+                class="border-2 py-4 pl-3 outline-none rounded-md poppins"
+              />
             </div>
+          </div>
+          <div class="pb-5">
+            <button
+              class="px-10 py-4 rounded-md bg-[#db4444] text-white poppins"
+            >
+              Apply Coupon
+            </button>
+          </div>
         </div>
-        <!-- right -->
-        <div class="flex flex-col gap-6 lg:w-5/12 border-2 border-black p-4">
-            <div class="flex flex-col gap-4">
-                <p class="text-xl font-semibold poppins">Cart Total</p>
-                <div class="flex flex-row justify-between">
-                    <p class="poppins">SubtotaL:</p>
-                    <p class=" poppins">$1750</p>
-                </div>
-                <hr class="border-[1px]">
-            </div>
-            <div class="flex flex-col gap-4">
-                <div class="flex flex-row justify-between">
-                    <p class=" poppins">Shipping:</p>
-                    <p class=" poppins">Free</p>
-                </div>
-                <hr class="border-[1px]">
-            </div>
-            <div class="flex flex-row justify-between">
-                <p class=" poppins">Total:</p>
-                <p class=" poppins">$1750</p>
-            </div>
-            <a href="checkout.html" class="flex flex-row justify-center pb-3">
-                <button class=" poppinsbg-red-500 bg-[#db4444] text-white font-bold py-3 px-10 rounded">
-                    Procees to checkout
-                </button>
-            </a>
+      </div>
+      <!-- right -->
+      <div class="flex flex-col gap-6 lg:w-5/12 border-2 border-black p-4">
+        <div class="flex flex-col gap-4">
+          <p class="text-xl font-semibold poppins">Cart Total</p>
+          <div class="flex flex-row justify-between">
+            <p class="poppins">SubtotaL:</p>
+            <p class="poppins">$1750</p>
+          </div>
+          <hr class="border-[1px]" />
         </div>
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-row justify-between">
+            <p class="poppins">Shipping:</p>
+            <p class="poppins">Free</p>
+          </div>
+          <hr class="border-[1px]" />
+        </div>
+        <div class="flex flex-row justify-between">
+          <p class="poppins">Total:</p>
+          <p class="poppins">$1750</p>
+        </div>
+        <a href="checkout.html" class="flex flex-row justify-center pb-3">
+          <button
+            class="poppinsbg-red-500 bg-[#db4444] text-white font-bold py-3 px-10 rounded"
+          >
+            Procees to checkout
+          </button>
+        </a>
+      </div>
     </section>
     <!-- footer -->
     <footer class="bg-black lg:pt-20 md:pt-12 pt-8 mt-10">
@@ -367,6 +422,5 @@
         &copy; Copyright @devmanirul 2024. All right reserved.
       </p>
     </footer>
-</body>
-
+  </body>
 </html>

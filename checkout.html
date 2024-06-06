@@ -48,7 +48,7 @@
     </header>
     <!-- navbar -->
     <nav
-      class="max-w-7xl mx-auto px-28 w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center"
+      class="max-w-7xl mx-auto lg:px-28 md:px-12 px-5u/jxx                                                                                                                                                                placeholder: w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center"
     >
       <!-- top -->
       <div class="lg:w-2/12">
@@ -83,16 +83,24 @@
           >Sign Up</a
         >
       </div>
-      <!-- right -->
+      <!-- right  -->
       <div
-        class="relative lg:w-4/12 flex flex-row lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md"
+        class="relative flex lg:flex-row md:flex-row flex-col lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md"
       >
         <input
           type="text"
           placeholder="What are you looking for?"
           class="bg-[#f5f5f5] rounded text-xs pr-8 pl-2 py-2 outline-none poppins"
         />
-        <a href="wishlist.html" class="relative rounded-full">
+        <!-- button -->
+        <button
+          class="absolute lg:right-[158px] md:right-[100px] right-[6px] lg:top-[14px] md:top-2 top-[5px]"
+        >
+          <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
+        </button>
+        <!--  -->
+        <div class="flex flex-row gap-5 justify-center items-center">
+          <a href="wishlist.html" class="relative rounded-full">
           <img src="./images/nav/wishlist.svg" alt="" class="" />
           <div
             class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-0 md:top-1 top-0 lg:right-0 md:right-0 right-0"
@@ -111,11 +119,7 @@
         <a href="#" class="">
           <img src="./images/about page/user.svg" alt="" class="" />
         </a>
-        <button
-          class="absolute lg:right-[103px] right-[30px] lg:top-[14px] md:top-2 top-[5px]"
-        >
-          <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
-        </button>
+        </div>
       </div>
     </nav>
     <hr class="border mb-10" />
