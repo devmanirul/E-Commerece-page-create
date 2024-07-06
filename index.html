@@ -219,7 +219,7 @@
         <!-- title -->
         <div class="py-14">
           <!-- top -->
-          <div class="flex flex-row items-center gap-4 mb-5">
+          <div class="flex flex-row lg:justify-normal md:justify-normal justify-center items-center gap-4 mb-3">
             <div class="bg-[#DB4444] w-5 h-10 rounded-sm"></div>
             <p class="text-[#DB4444] text-base font-semibold poppins">
               Today’s
@@ -227,58 +227,58 @@
           </div>
           <!-- middle -->
           <div
-            class="flex lg:flex-row md:flex-row flex-col justify-between items-center gap-2 w-full"
+            class="flex lg:flex-row md:flex-row flex-col md:justify-between justify-center items-center gap-2 md:w-full border-2 border-red-400"
           >
             <div
-              class="flex lg:flex-row md:flex-row flex-col lg:gap-0 gap-5 lg:items-end justify-between lg:w-7/12"
+              class="flex lg:flex-row md:flex-row flex-col lg:gap-0 gap-3 lg:items-end md:justify-between justify-center items-center lg:w-7/12"
             >
-              <h4 class="font-semibold lg:text-4xl md:text-2xl text-xl">Flash Sales</h4>
+              <h4 class="font-semibold lg:text-4xl md:text-2xl text-lg md:text-start text-center">Flash Sales</h4>
               <!-- time area -->
-              <div class="lg:w-5/12 flex flex-row">
+              <div class="lg:w-5/12 flex flex-row md:justify-center justify-between items-center">
                 <!-- days -->
-                <div class="flex flex-row lg:gap-3 md:gap-3 gap-2">
+                <div class="flex flex-row lg:gap-3 md:gap-3 gap-1">
                   <div class="flex flex-col">
                     <p class="poppins text-sm font-medium">Days</p>
-                    <h3 class="lg:text-3xl md:text-2xl text-xl font-bold">
+                    <h3 class="lg:text-3xl md:text-2xl text-lg font-bold">
                       03
                     </h3>
                   </div>
                   <div class="flex flex-col">
                     <div class="p-2"></div>
-                    <p class="text-[#e07575] text-3xl font-bold">:</p>
+                    <p class="text-[#e07575] md:text-3xl text-xl font-bold">:</p>
                   </div>
                 </div>
                 <!-- hours -->
-                <div class="flex flex-row lg:gap-3 md:gap-3 gap-2">
-                  <div class="flex flex-col pl-2">
+                <div class="flex flex-row lg:gap-3 md:gap-3 gap-1">
+                  <div class="flex flex-col md:pl-2">
                     <p class="poppins text-sm font-medium">Hours</p>
-                    <h3 class="lg:text-3xl md:text-2xl text-xl font-bold">
+                    <h3 class="lg:text-3xl md:text-2xl text-lg font-bold">
                       23
                     </h3>
                   </div>
                   <div class="flex flex-col">
                     <div class="p-2"></div>
-                    <p class="text-[#e07575] text-3xl font-bold">:</p>
+                    <p class="text-[#e07575] md:text-3xl text-xl font-bold">:</p>
                   </div>
                 </div>
                 <!-- minutes -->
-                <div class="flex flex-row lg:gap-4 md:gap-3 gap-2">
-                  <div class="flex flex-col pl-2">
+                <div class="flex flex-row lg:gap-4 md:gap-3 gap-1">
+                  <div class="flex flex-col md:pl-2">
                     <p class="poppins text-sm font-medium">Minutes</p>
-                    <h3 class="lg:text-3xl md:text-2xl text-xl font-bold">
+                    <h3 class="lg:text-3xl md:text-2xl text-lg font-bold">
                       19
                     </h3>
                   </div>
                   <div class="flex flex-col">
                     <div class="p-2"></div>
-                    <p class="text-[#e07575] text-3xl font-bold">:</p>
+                    <p class="text-[#e07575] md:text-3xl text-xl font-bold">:</p>
                   </div>
                 </div>
                 <!-- seconds -->
-                <div class="flex flex-row lg:gap-4 md:gap-3 gap-2">
-                  <div class="flex flex-col pl-2">
+                <div class="flex flex-row lg:gap-4 md:gap-3 gap-1">
+                  <div class="flex flex-col md:pl-2">
                     <p class="poppins text-sm font-medium">Seconds</p>
-                    <h3 class="lg:text-3xl md:text-2xl text-xl font-bold">
+                    <h3 class="lg:text-3xl md:text-2xl text-lg font-bold">
                       56
                     </h3>
                   </div>
@@ -289,7 +289,7 @@
               </div>
             </div>
             <!-- left / right selector -->
-            <div class=" flex flex-row justify-end gap-2">
+            <div class="hidden md:flex flex-row justify-end gap-2">
               <div class="bg-[#f5f5f5] p-2 rounded-full hover:bg-[#e5e5e5] next">
                   <img src="./images/Flash sales/arrow-left.svg" alt="" class="cursor-pointer" />
               </div>
@@ -297,10 +297,342 @@
                 <img src="./images/Flash sales/arrow-right.svg" alt="" class="cursor-pointer" />
                </div>
             </div>
+            <!-- responsive arrow -->
+            <div class="md:hidden flex flex-row justify-end gap-2">
+              <div class="bg-[#f5f5f5] p-2 rounded-full hover:bg-[#e5e5e5] back">
+                  <img src="./images/Flash sales/arrow-left.svg" alt="" class="cursor-pointer" />
+              </div>
+              <div class="bg-[#f5f5f5] p-2 rounded-full hover:bg-[#e5e5e5] prev">
+                <img src="./images/Flash sales/arrow-right.svg" alt="" class="cursor-pointer" />
+               </div>
+            </div>
           </div>
         </div>
         <!-- carts/bottom -->
-        <div class="flash_cart flex lg:flex-row md:flex-row flex-col gap-5">
+        <div class="flash_cart hidden md:flex lg:flex-row md:flex-row flex-col gap-5">
+          <!-- card1 -->
+          <div class="w-full  mr-2">
+            <div class="">
+              <div class="w-full mr-5">
+                <!-- top -->
+                <div class="relative group">
+                  <div
+                    class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded"
+                  >
+                    -40%
+                  </div>
+                  <div class="flex flex-col gap-1 absolute top-2 right-2">
+                    <button class="rounded-full bg-white">
+                      <img
+                        src="./images/Flash sales/love.svg"
+                        alt=""
+                        class=" "
+                      />
+                    </button>
+                    <button class="rounded-full bg-white">
+                      <img src="./images/Flash sales/Eye.svg" alt="" class="" />
+                    </button>
+                  </div>
+                  <a
+                    href="./productdetailspage.html"
+                    class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px] rounded-md"
+                  >
+                    <img
+                      src="./images/Flash sales/gamepad.svg"
+                      alt=""
+                      class="h-36 p-2"
+                    />
+                  </a>
+                  <button
+                    class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- bottom section -->
+                <div class="mt-4 ml-2">
+                  <h6 class="font-medium text-base poppins">
+                    HAVIT HV-G92 Gamepad
+                  </h6>
+                  <div
+                    class="flex flex-row items-center text-base font-medium gap-2"
+                  >
+                    <p class="poppins font-medium text-[#DB4444]">$120</p>
+                    <p class="poppins font-medium line-through text-[#808080]">
+                      $160
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-1">
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <p class="text-[#808080] font-semibold poppins">(65)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div class="w-full mr-2">
+            <div class="">
+              <div class="w-full mr-5">
+                <!-- top -->
+                <div class="relative group">
+                  <div
+                    class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded"
+                  >
+                    -40%
+                  </div>
+                  <div class="flex flex-col gap-1 absolute top-2 right-2">
+                    <button class="rounded-full bg-white">
+                      <img
+                        src="./images/Flash sales/love.svg"
+                        alt=""
+                        class=" "
+                      />
+                    </button>
+                    <button class="rounded-full bg-white">
+                      <img src="./images/Flash sales/Eye.svg" alt="" class="" />
+                    </button>
+                  </div>
+                  <a
+                    href="./productdetailspage.html"
+                    class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px] rounded-md"
+                  >
+                    <img
+                      src="./images/Flash sales/keyboard.svg"
+                      alt=""
+                      class="h-36 p-2"
+                    />
+                  </a>
+                  <button
+                    class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- bottom section -->
+                <div class="mt-4 ml-2">
+                  <h6 class="font-medium text-base poppins">
+                    HAVIT HV-G92 Gamepad
+                  </h6>
+                  <div
+                    class="flex flex-row items-center text-base font-medium gap-2"
+                  >
+                    <p class="poppins font-medium text-[#DB4444]">$120</p>
+                    <p class="poppins font-medium line-through text-[#808080]">
+                      $160
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-1">
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <p class="text-[#808080] font-semibold poppins">(65)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div class="w-full  mr-2">
+            <div class="">
+              <div class="w-full mr-5">
+                <!-- top -->
+                <div class="relative group">
+                  <div
+                    class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded"
+                  >
+                    -40%
+                  </div>
+                  <div class="flex flex-col gap-1 absolute top-2 right-2">
+                    <button class="rounded-full bg-white">
+                      <img
+                        src="./images/Flash sales/love.svg"
+                        alt=""
+                        class=" "
+                      />
+                    </button>
+                    <button class="rounded-full bg-white">
+                      <img src="./images/Flash sales/Eye.svg" alt="" class="" />
+                    </button>
+                  </div>
+                  <a
+                    href="./productdetailspage.html"
+                    class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px] rounded-md"
+                  >
+                    <img
+                      src="./images/Flash sales/monitor.svg"
+                      alt=""
+                      class="h-36 p-2"
+                    />
+                  </a>
+                  <button
+                    class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- bottom section -->
+                <div class="mt-4 ml-2">
+                  <h6 class="font-medium text-base poppins">
+                    HAVIT HV-G92 Gamepad
+                  </h6>
+                  <div
+                    class="flex flex-row items-center text-base font-medium gap-2"
+                  >
+                    <p class="poppins font-medium text-[#DB4444]">$120</p>
+                    <p class="poppins font-medium line-through text-[#808080]">
+                      $160
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-1">
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <p class="text-[#808080] font-semibold poppins">(65)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card4 -->
+          <div class="w-full  mr-2">
+            <div class="">
+              <div class="w-full mr-5">
+                <!-- top -->
+                <div class="relative group">
+                  <div
+                    class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded"
+                  >
+                    -40%
+                  </div>
+                  <div class="flex flex-col gap-1 absolute top-2 right-2">
+                    <button class="rounded-full bg-white">
+                      <img
+                        src="./images/Flash sales/love.svg"
+                        alt=""
+                        class=" "
+                      />
+                    </button>
+                    <button class="rounded-full bg-white">
+                      <img src="./images/Flash sales/Eye.svg" alt="" class="" />
+                    </button>
+                  </div>
+                  <a
+                    href="./productdetailspage.html"
+                    class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px] rounded-md"
+                  >
+                    <img
+                      src="./images/Flash sales/chair.svg"
+                      alt=""
+                      class="h-36 p-2"
+                    />
+                  </a>
+                  <button
+                    class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- bottom section -->
+                <div class="mt-4 ml-2">
+                  <h6 class="font-medium text-base poppins">
+                    HAVIT HV-G92 Gamepad
+                  </h6>
+                  <div
+                    class="flex flex-row items-center text-base font-medium gap-2"
+                  >
+                    <p class="poppins font-medium text-[#DB4444]">$120</p>
+                    <p class="poppins font-medium line-through text-[#808080]">
+                      $160
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-1">
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <p class="text-[#808080] font-semibold poppins">(65)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card5 -->
+          <div class="w-full  mr-2">
+            <div class="">
+              <div class="w-full mr-5">
+                <!-- top -->
+                <div class="relative group">
+                  <div
+                    class="bg-[#DB4444] text-[#FAFAFA] absolute top-2 left-2 text-xs px-2 py-1 rounded"
+                  >
+                    -40%
+                  </div>
+                  <div class="flex flex-col gap-1 absolute top-2 right-2">
+                    <button class="rounded-full bg-white">
+                      <img
+                        src="./images/Flash sales/love.svg"
+                        alt=""
+                        class=" "
+                      />
+                    </button>
+                    <button class="rounded-full bg-white">
+                      <img src="./images/Flash sales/Eye.svg" alt="" class="" />
+                    </button>
+                  </div>
+                  <a
+                    href="./productdetailspage.html"
+                    class="bg-[#F5F5F5] flex flex-col justify-center items-center p-[33px] rounded-md"
+                  >
+                    <img
+                      src="./images/Flash sales/monitor.svg"
+                      alt=""
+                      class="h-36 p-2"
+                    />
+                  </a>
+                  <button
+                    class="bg-black w-full text-white py-1 rounded-b hidden group-hover:flex justify-center items-center absolute bottom-0"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <!-- bottom section -->
+                <div class="mt-4 ml-2">
+                  <h6 class="font-medium text-base poppins">
+                    HAVIT HV-G92 Gamepad
+                  </h6>
+                  <div
+                    class="flex flex-row items-center text-base font-medium gap-2"
+                  >
+                    <p class="poppins font-medium text-[#DB4444]">$120</p>
+                    <p class="poppins font-medium line-through text-[#808080]">
+                      $160
+                    </p>
+                  </div>
+                  <div class="flex flex-row gap-1">
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <img src="./images/Flash sales/star.svg" alt="" class="" />
+                    <p class="text-[#808080] font-semibold poppins">(65)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- responsive flsh card -->
+        <div class="responsive_cart md:hidden flex lg:flex-row md:flex-row flex-col gap-5">
           <!-- card1 -->
           <div class="w-full  mr-2">
             <div class="">
@@ -658,8 +990,21 @@
               </div>
             </div>
           </div>
-          <!-- right -->
-          <div class="lg:w-1/12 flex flex-row gap-3">
+          <!-- right arrow -->
+          <div class="lg:w-1/12 hidden md:flex flex-row gap-3">
+            <div
+              class="bg-[#f5f5f5] p-2 h-fit rounded-full cursor-pointer hover:bg-[#e5e5e5]  next"
+            >
+              <img src="./images/Flash sales/arrow-left.svg" alt="" class="" />
+            </div>
+            <div
+              class="bg-[#f5f5f5] p-2 h-fit rounded-full cursor-pointer hover:bg-[#e5e5e5] previous"
+            >
+              <img src="./images/Flash sales/arrow-right.svg" alt="" class="" />
+            </div>
+          </div>
+          <!-- responsive arrow -->
+          <div class="lg:w-1/12 md:hidden flex flex-row gap-3">
             <div
               class="bg-[#f5f5f5] p-2 h-fit rounded-full cursor-pointer hover:bg-[#e5e5e5]  Cnext"
             >
@@ -673,7 +1018,122 @@
           </div>
         </div>
         <!-- items area -->
-        <div class="catagoryCard lg:w-full lg:pt-10 md:pt-6 pt-4">
+        <div class="bbcatagoryCard hidden md:block lg:w-full lg:pt-10 md:pt-6 pt-4">
+          <!-- items1 -->
+          <div
+            class="w-full ml-2 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer"
+          >
+            <img
+              src="./images/browse/phones.svg"
+              alt=""
+              class="group-hover:hidden"
+            />
+            <img
+              src="./images/browse/CellPhone-white.svg"
+              alt=""
+              class="hidden group-hover:block \]"
+            />
+            <p class="text-base poppins text-center">Phones</p>
+          </div>
+          <!-- items2 -->
+          <div
+            class="ml-2 w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer"
+          >
+            <img
+              src="./images/browse/Computer.svg"
+              alt=""
+              class="group-hover:hidden"
+            />
+            <img
+              src="./images/browse/Computer-white.svg"
+              alt=""
+              class="hidden group-hover:block"
+            />
+            <p class="text-base poppins text-center">Computer</p>
+          </div>
+          <!-- items3 -->
+          <div
+            class="ml-2 w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer"
+          >
+            <img
+              src="./images/browse/SmartWatch.svg"
+              alt=""
+              class="group-hover:hidden"
+            />
+            <img
+              src="./images/browse/SmartWatch-white.svg"
+              alt=""
+              class="hidden group-hover:block"
+            />
+            <p class="text-base poppins text-center">SmartWatch</p>
+          </div>
+          <!-- items4 -->
+          <div
+            class="ml-2 w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer"
+          >
+            <img
+              src="./images/browse/Camera.svg"
+              alt=""
+              class="group-hover:hidden"
+            />
+            <img
+              src="./images/browse/Camera-white.svg"
+              alt=""
+              class="hidden group-hover:block"
+            />
+            <p class="text-base poppins text-center">Cemera</p>
+          </div>
+          <!-- card5 -->
+          <div
+            class="ml-2 w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer"
+          >
+            <img
+              src="./images/browse/Headphone.svg"
+              alt=""
+              class="group-hover:hidden"
+            />
+            <img
+              src="./images/browse/Headphone-white.svg"
+              alt=""
+              class="hidden group-hover:block"
+            />
+            <p class="text-base poppins text-center">HeadPhone</p>
+          </div>
+          <!-- card6 -->
+          <div
+            class="ml-2 w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer"
+          >
+            <img
+              src="./images/browse/Gamepad.svg"
+              alt=""
+              class="group-hover:hidden"
+            />
+            <img
+              src="./images/browse/Gamepad-white.svg"
+              alt=""
+              class="hidden group-hover:block"
+            />
+            <p class="text-base poppins text-center">SmartWatch</p>
+          </div>
+          <!-- items7 -->
+          <div
+            class="ml-2 w-2/12 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer"
+          >
+            <img
+              src="./images/browse/Camera.svg"
+              alt=""
+              class="group-hover:hidden"
+            />
+            <img
+              src="./images/browse/Camera-white.svg"
+              alt=""
+              class="hidden group-hover:block"
+            />
+            <p class="text-base poppins text-center">Cemera</p>
+          </div>
+        </div>
+        <!-- responsive cards -->
+         <div class="catagoryCard md:hidden block lg:w-full lg:pt-10 md:pt-6 pt-4">
           <!-- items1 -->
           <div
             class="w-full ml-2 h-36 border-2 flex flex-col justify-center items-center gap-4 rounded hover:bg-[#DB4444] hover:text-white group cursor-pointer"
