@@ -1,12 +1,12 @@
 // flash sales
 $(document).ready(function () {
-  $(".flash_cart").slick({
+  $(".flash_card").slick({
     // setting-name: setting-value
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: ".previous",
-    nextArrow: ".next",
+    prevArrow: ".previous1",
+    nextArrow: ".next1",
   });
 });
 
@@ -54,5 +54,16 @@ $(document).ready(function () {
     arrows: true,
     prevArrow: ".Eprevious",
     nextArrow: ".Enext",
+  });
+});
+// responsive explore our products
+$(document).ready(function () {
+  $(".explorea_responsive").slick({
+    // setting-name: setting-value
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: ".Eprev",
+    nextArrow: ".Eback",
   });
 });
