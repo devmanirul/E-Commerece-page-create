@@ -26,7 +26,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".bbcatagoryCard").slick({
     // setting-name: setting-value
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
     arrows: true,
     prevArrow: ".previous",
