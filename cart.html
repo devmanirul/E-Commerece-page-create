@@ -50,7 +50,7 @@
     </header>
     <!-- navbar -->
     <nav
-      class="max-w-7xl mx-auto px-28 w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center"
+      class="max-w-7xl mx-auto lg:px-28 md:px-12 px-5u/jxx                                                                                                                                                                placeholder: w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center"
     >
       <!-- top -->
       <div class="lg:w-2/12">
@@ -66,26 +66,26 @@
       >
         <a
           href="index.html"
-          class="duration-300 transition px-1 lg:text-base md:text-base text-sm hover:underline poppins"
+          class="poppins px-1 lg:text-base md:text-base text-sm hover:underline poppins"
           >Home</a
         >
         <a
           href="contact.html"
-          class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          class="poppins px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
           >Contact</a
         >
         <a
           href="about.html"
-          class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          class="poppins px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
           >About</a
         >
         <a
           href="./signup.html"
-          class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          class="poppins px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
           >Sign Up</a
         >
       </div>
-      <!-- right -->
+      <!-- right  -->
       <div
         class="relative flex lg:flex-row md:flex-row flex-col lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md"
       >
@@ -94,13 +94,34 @@
           placeholder="What are you looking for?"
           class="bg-[#f5f5f5] rounded text-xs pr-8 pl-2 py-2 outline-none poppins"
         />
+        <!-- button -->
         <button
-          class="absolute lg:right-[20px] md:right-[12px] right-[5px] lg:top-[14px] md:top-2 top-[5px]"
+          class="absolute lg:right-[158px] md:right-[100px] right-[6px] lg:top-[14px] md:top-2 top-[5px]"
         >
           <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
         </button>
-        <!-- wishlist -->
-        <div class="flex flex-row"></div>
+        <!--  -->
+        <div class="flex flex-row gap-5 justify-center items-center">
+          <a href="wishlist.html" class="relative rounded-full">
+          <img src="./images/nav/wishlist.svg" alt="" class="" />
+          <div
+            class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-0 md:top-1 top-0 lg:right-0 md:right-0 right-0"
+          >
+            4
+          </div>
+        </a>
+        <a href="cart.html" class="relative rounded-full">
+          <img src="./images/nav/troly.svg" alt="" class="cursor-pointer" />
+          <div
+            class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-0 md:top-1 top-0 lg:right-0 md:right-0 right-0"
+          >
+            2
+          </div>
+        </a>
+        <a href="#" class="">
+          <img src="./images/about page/user.svg" alt="" class="" />
+        </a>
+        </div>
       </div>
     </nav>
     <hr class="border" />
