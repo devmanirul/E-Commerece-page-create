@@ -53,73 +53,75 @@
     </header>
     <!-- navbar -->
     <nav
-      class="max-w-7xl mx-auto px-28 w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 gap-2 lg:justify-between md:justify-between items-center"
+      class="max-w-7xl mx-auto lg:px-28 md:px-12 px-5 placeholder: w-full lg:pt-8 py-2 lg:pb-1 flex lg:flex-row md:flex-row flex-col lg:gap-3 md:gap-1 gap-2 lg:justify-between md:justify-between items-center"
     >
-      <!-- top -->
-      <div class="lg:w-2/12">
+      <!-- left -->
+      <div class="lg:w-2/12 md:w-fit">
         <h1
-          class="text-[#030712] lg:text-start md:text-start text-center font-bold lg:text-2xl md:text-xl text-lg"
+          class="text-[#030712] lg:text-start md:text-start text-center font-bold lg:text-2xl text-lg"
         >
           Exclusive
         </h1>
       </div>
       <!-- middle -->
       <div
-        class="lg:w-5/12 flex lg:flex-row md:flex-row flex-col lg:justify-end lg:items-start md:items-start items-center text-lg lg:gap-8 md:gap-3 gap-3"
+        class="lg:w-5/12 md:w-5/12 flex lg:flex-row md:flex-row flex-col lg:justify-end lg:items-start md:items-start items-center text-lg lg:gap-8 md:gap-3 gap-3"
       >
         <a
           href="index.html"
-          class="duration-300 transition px-1 lg:text-base md:text-base text-sm hover:underline poppins"
+          class="poppins px-1 lg:text-base md:text-sm text-sm hover:underline poppins"
           >Home</a
         >
         <a
           href="contact.html"
-          class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          class="poppins px-1 rounded lg:text-base text-sm hover:underline poppins"
           >Contact</a
         >
         <a
           href="about.html"
-          class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          class="poppins px-1 rounded lg:text-base text-sm hover:underline poppins"
           >About</a
         >
         <a
           href="./signup.html"
-          class="duration-300 transition px-1 rounded lg:text-base md:text-base text-sm hover:underline poppins"
+          class="poppins px-1 rounded lg:text-base text-sm hover:underline poppins"
           >Sign Up</a
         >
       </div>
-      <!-- right -->
+      <!-- right  -->
       <div
-        class="relative flex lg:flex-row md:flex-row flex-col lg:justify-end md:justify-end lg:items-center lg:gap-4 gap-2 lg:pl-4 md:pl-3 lg:h-12 rounded-md"
+        class="lg:w-5/12 md:w-fit relative flex lg:flex-row md:flex-row flex-col lg:justify-end md:justify-end lg:items-center lg:gap-4 md:gap-0 gap-2 lg:pl-4 lg:h-12 rounded-md"
       >
         <input
           type="text"
           placeholder="What are you looking for?"
-          class="bg-[#f5f5f5] rounded text-xs pr-8 pl-2 py-2 outline-none poppins"
+          class="bg-[#f5f5f5] rounded text-xs pr-6 lg:pr-8 pl-2 py-2 outline-none poppins"
         />
-        <!-- search -->
+        <!-- button -->
         <button
-          class="absolute lg:right-[150px] md:right-[50px] right-[5px] lg:top-[14px] md:top-2 top-[5px]"
+          class="absolute lg:right-[158px] md:right-[125px] right-[6px] lg:top-[14px] md:top-1 top-[5px]"
         >
           <img src="./images/nav/search.svg" alt="" class="h-5 w-5" />
         </button>
         <!--  -->
-        <div class="flex flex-row justify-center items-center gap-5">
-          <!-- wishlist -->
-          <a href="#" class="relative rounded-full">
+        <div class="flex flex-row gap-5 justify-center items-center">
+          <a href="wishlist.html" class="relative rounded-full">
             <img src="./images/nav/wishlist.svg" alt="" class="" />
             <div
-              class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-0 md:top-1 top-0 lg:right-0 md:right-0 right-0"
+              class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-0 top-0 lg:right-0 md:right-0 right-0"
             >
               4
             </div>
           </a>
-          <!-- cart -->
-          <a href="cart.html" class="rounded-full">
+          <a href="cart.html" class="relative rounded-full">
             <img src="./images/nav/troly.svg" alt="" class="cursor-pointer" />
+            <div
+              class="absolute bg-red-600 text-white w-fit rounded-full px-1 text-xs lg:top-0 top-0 lg:right-0 md:right-0 right-0"
+            >
+              2
+            </div>
           </a>
-          <!-- chakout -->
-          <a href="checkout.html" class="">
+          <a href="#" class="">
             <img src="./images/about page/user.svg" alt="" class="" />
           </a>
         </div>
@@ -146,7 +148,7 @@
       </div>
       <!-- cards -->
       <div class="flex flex-col">
-        <div class="flex lg:flex-row md:flex flex-col gap-6 w-full">
+        <div class="flex lg:flex-row md:flex-row flex-col lg:gap-6 md:gap-2 w-full">
           <!-- card1 -->
           <div class="lg:w-3/4 flex flex-col gap-3">
             <!-- TOP -->
@@ -322,7 +324,7 @@
       </div>
       <!-- cards -->
       <div class="flex flex-col">
-        <div class="flex lg:flex-row md:flex flex-col gap-6 w-full">
+        <div class="flex lg:flex-row md:flex-row flex-col gap-2 lg:gap-6 w-full">
           <!-- card1 -->
           <div class="lg:w-3/4 flex flex-col gap-3">
             <!-- top -->
